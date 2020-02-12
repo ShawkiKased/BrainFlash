@@ -8,7 +8,7 @@ import { Route } from 'react-router-dom';
 const App = () => (
     <>
         <header>
-        <h1>Welcome to a world of Flash Cards, Welcome, to BRAINFLASH </h1>
+        <h1> Welcome to BrainFlash, an Endless World of Flash Cards!</h1>
         <GreetingContainer />
         </header>
         

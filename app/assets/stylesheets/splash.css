@@ -1,0 +1,21 @@
+html {
+    background-image: url("splash_background.jpg");
+    border-image: auto;
+}
+
+h1 {
+    font-size: 50px;
+    color: #fff;
+    font-family: Proxima Nova, sans-serif;
+    font-weight: 400;
+    width: 50%;
+    text-align: left;
+    line-height: 120%;
+    margin: 0;
+    text-shadow: none;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+}
