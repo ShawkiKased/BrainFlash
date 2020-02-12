@@ -11,7 +11,7 @@ const App = () => (
         <h1>Welcome to a world of Flash Cards, Welcome, to BRAINFLASH </h1>
         <GreetingContainer />
         </header>
-
+        
         <AuthRoute exact path="/login" component={LogInFormContainer} />
         <AuthRoute exact path="/signup" component={SignUpFormContainer} />
     </>
