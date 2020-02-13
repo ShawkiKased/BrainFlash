@@ -1,0 +1,1 @@
+json.array! @card.deck.card_ids
