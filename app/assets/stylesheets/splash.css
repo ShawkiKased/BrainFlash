@@ -1,6 +1,5 @@
 html {
     background-image: url("splash_background.jpg");
-    border-image: auto;
 }
 
 h1 {
@@ -14,6 +13,32 @@ h1 {
     margin: 0;
     text-shadow: none;
     box-sizing: border-box;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.h1 {
+  font-size: 24px;
+  line-height: 135%;
+  font-family: Proxima Nova, sans-serif;
+  color: #fff;
+  font-weight: 100;
+  margin: 0;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.h2 {
+  font-size: 24px;
+  line-height: 135%;
+  font-family: Proxima Nova, sans-serif;
+  color: #fff;
+  font-weight: 100;
+  margin: 0;
+  text-align: left;
+  box-sizing: border-box;
 }
 
 a {
@@ -42,3 +67,113 @@ a {
   color: red;
 }
 
+.login-form-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: calc(100vh - 60px);
+  width: auto;
+  overflow: auto;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  font-family: proxima, sans-serif;
+  box-sizing: border-box;
+}
+
+.close-x {
+  display: flex;
+  font-size: 42px;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #777;
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+  box-sizing: border-box;
+  font-weight: bold;
+  text-align: left;
+  font-family: Proxima Nova, sans-serif;
+  box-sizing: border-box;
+  padding: 5px 10px 5px 10px;
+  padding-left: 10px;
+  padding-right: 10ps;
+  border: 0px;
+  border-radius: 2px;
+}
+
+.login-form {
+  padding-top: 8px;
+  position: relative;
+  width: 80%;
+  box-sizing: border-box;
+  display: block;
+  margin-top: 0em;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.session-submit {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+  margin-top: 24px;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 14px;
+  text-align: left;
+  font-family: Proxima Nova, sans-serif;
+  box-sizing: border-box;
+}
+
+.main-form {
+  font-size: 36px;
+  padding: 0;
+  color: #197096;
+  font-family: Proxima Nova,sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  display: block;
+}
+
+.text-email {
+  position: relative;
+  margin: 0 0 18px;
+  box-sizing: border-box;
+  display: block;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  font-family: Proxima Nova, sans-serif;
+}
+
+.text-password {
+   position: relative;
+  margin: 0 0 18px;
+  box-sizing: border-box;
+  display: block;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  font-family: Proxima Nova, sans-serif;
+}
+
+.other-form {
+  color: #28a5dc;
+}
