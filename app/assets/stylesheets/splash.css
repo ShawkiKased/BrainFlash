@@ -75,21 +75,18 @@ a {
   max-height: calc(100vh - 60px);
   width: auto;
   overflow: auto;
-  box-sizing: border-box;
   color: #333;
   font-size: 14px;
   font-weight: 400;
   text-align: left;
   font-family: proxima, sans-serif;
-  box-sizing: border-box;
 }
 
 .close-x {
   display: flex;
-  font-size: 42px;
+  font-size: 15px;
   position: absolute;
-  right: 18px;
-  top: 18px;
+  right: 23px;
   align-items: center;
   justify-content: center;
   background-color: transparent;
@@ -124,18 +121,24 @@ a {
   box-sizing: border-box;
 }
 
-.session-submit {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 6px;
-  margin-top: 24px;
-  box-sizing: border-box;
-  color: #333;
-  font-size: 14px;
-  text-align: left;
-  font-family: Proxima Nova, sans-serif;
-  box-sizing: border-box;
+.login-form > .session-submit {
+ margin: 0 6px;
+ background-color: #cecece;
+ cursor: not-allowed;
+ font-size: 14px;
+ font-weight: 700;
+ height: 48px;
+ color: #fff;
+ align-items: center;
+ border: none;
+ border-radius: 36px;
+ box-sizing: border-box;
+ display:flex;
+ justify-content: center;
+ outline-style: none;
+ padding: 0 28.8px;
+ position: relative;
+ transition: all .3s;
 }
 
 .main-form {
@@ -146,9 +149,9 @@ a {
   font-weight: 600;
   text-align: center;
   text-transform: capitalize;
-  box-sizing: border-box;
-  display: block;
+  border: none;
 }
+
 
 .text-email {
   position: relative;
@@ -174,6 +177,16 @@ a {
   font-family: Proxima Nova, sans-serif;
 }
 
-.other-form {
+.other-form > button {
   color: #28a5dc;
+  cursor: pointer;
+  position: relative;
+  transition: all .3s;
+  box-sizing: border-box;
+  display: block;
+  font-size: 14px;
+  border: none;
+  font-weight: 400;
+  text-align: left;
+  font-family: Proxima Nova, sans-serif;
 }
