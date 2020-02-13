@@ -190,3 +190,8 @@ a {
   text-align: left;
   font-family: Proxima Nova, sans-serif;
 }
+
+.header-name {
+  color: #fff;
+  font-size: 50px;
+}
