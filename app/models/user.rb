@@ -7,6 +7,17 @@ class User < ApplicationRecord
     attr_reader :password
 
 
+    has_many :decks,
+    primary_key: :id,
+    foreign_key: :author_id,
+    class_name: :Deck
+
+    has_many :cards,
+    primary_key: :id,
+    foreign_key: :author_id,
+    class_name: :Card
+
+
     # Using FIGVAPER as a reference for the methods
 
     def self.find_by_credentials(email, password)
