@@ -65,11 +65,12 @@ a {
 }
 
 .login-form-box {
+  width: 700px;
+  height: 500px;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
   max-height: calc(100vh - 60px);
-  width: auto;
   overflow: auto;
   color: #333;
   font-size: 14px;
@@ -202,8 +203,14 @@ margin-bottom: 20px;
   height: 60px;
   font-weight: 400;
   font-size: 13px;
-  /* padding-inline-start: 40px; */
   font-family: Proxima Nova, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.logo-header {
+  padding: 10px;
 }
 
 .started-button {

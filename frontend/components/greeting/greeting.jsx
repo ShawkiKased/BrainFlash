@@ -3,118 +3,24 @@ import React from 'react';
 const Greeting = ({ currentUser, logout, openModal }) => {
     const sessionLinks = () => {
         return (
-        <nav className="login-signup">
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            <section className="logo"></section>
-            <a className="header-link" href="#/">
-                <span className="brain">BRAIN</span>
-                <span className="flash">FLASH</span>
-            </a> 
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
+         <>
+          <nav className="login-signup">
+            <div className="logo-header">
+              <section className="logo"></section>
+              <a className="header-link" href="#/">
+                  <span className="brain">BRAIN</span>
+                  <span className="flash">FLASH</span>
+              </a> 
+            </div>
             <button className="find">Find Flashcards</button>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
             <button className="make">Make Flashcards</button>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
             <button className="educators">Educators</button>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
             <button className="companies">Companies</button>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
             <button className="about">About</button>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
             <button className="login-button" onClick={() => openModal('Login')}>Login</button>
-            &nbsp;
-            &nbsp;
-            &nbsp;
             <button className="started-button" onClick={() => openModal('Get Started!')}>Get Started!</button>
-        </nav>
+          </nav>
+         </>
         );
     };
     
