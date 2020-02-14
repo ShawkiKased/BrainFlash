@@ -12,11 +12,9 @@ h1 {
     line-height: 120%;
     margin: 0;
     text-shadow: none;
-    box-sizing: border-box;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+
 }
 
 .h1 {
@@ -208,4 +206,42 @@ a {
 
 .started-button {
   color: orange;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.login-button {
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.about {
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.companies {
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.educators {
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.make {
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
 }

@@ -77,12 +77,6 @@ const Greeting = ({ currentUser, logout, openModal }) => {
          &nbsp;
         &nbsp;
         &nbsp;
-         &nbsp;
-        &nbsp;
-        &nbsp;
-         &nbsp;
-        &nbsp;
-        &nbsp;
         <button className="make">Make Flashcards</button>
         &nbsp;
         &nbsp;
@@ -123,6 +117,12 @@ const Greeting = ({ currentUser, logout, openModal }) => {
         &nbsp;
         &nbsp;
         &nbsp;
+        &nbsp;
+        &nbsp;
+         &nbsp;
+        &nbsp;
+        &nbsp;
+         &nbsp;
         &nbsp;
         &nbsp;
          &nbsp;
