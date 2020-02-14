@@ -10,7 +10,7 @@ const App = () => (
     <>
         <Modal />
         <header> 
-          <GreetingContainer />
+          <GreetingContainer className="greeting" />
           <h1> Welcome to BrainFlash, an Endless World of Flash Cards!</h1>
           <h2 className="h1">Learn twice as fast, and remember longer!</h2>
           <h2 className="h2">Proven by decades of cognitive science</h2>
