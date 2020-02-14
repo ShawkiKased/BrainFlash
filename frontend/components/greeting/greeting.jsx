@@ -13,14 +13,6 @@ const Greeting = ({ currentUser, logout, openModal }) => {
             &nbsp;
             &nbsp;
             <section className="logo"></section>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
             <a className="header-link" href="#/">
                 <span className="brain">BRAIN</span>
                 <span className="flash">FLASH</span>

@@ -271,10 +271,7 @@ a {
 
 .logo {
   background-image: url("logo.png");
-  background-size: 30px;
-  background-position: left 13px;
+  background-size: 50px;
   background-repeat: no-repeat;
-  outline: 0 none;
-  width: 47px;
   height: 10px;
 }
