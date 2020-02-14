@@ -245,3 +245,36 @@ a {
   border: none;
   background: transparent;
 }
+
+.find {
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.brain {
+  font-weight: 800;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+  font-family: sans-serif
+}
+
+.flash {
+  font-weight: 100;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.logo {
+  background-image: url("logo.png");
+  background-size: 30px;
+  background-position: left 13px;
+  background-repeat: no-repeat;
+  outline: 0 none;
+  width: 47px;
+  height: 10px;
+}
