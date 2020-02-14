@@ -8,7 +8,6 @@ h1 {
     font-family: Proxima Nova, sans-serif;
     font-weight: 400;
     width: 50%;
-    text-align: left;
     line-height: 120%;
     margin: 0;
     text-shadow: none;
@@ -67,7 +66,6 @@ a {
 
 .login-form-box {
   align-items: center;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-height: calc(100vh - 60px);
@@ -77,13 +75,18 @@ a {
   font-size: 14px;
   font-weight: 400;
   text-align: left;
-  font-family: proxima, sans-serif;
+  background-color: white;
+  font-family: Montserrat;
+  box-sizing: border-box;
+  display: block;
+  margin-top: 0em;
 }
 
 .close-x {
   display: flex;
   font-size: 15px;
   position: absolute;
+  top: 5px;
   right: 23px;
   align-items: center;
   justify-content: center;
@@ -120,7 +123,7 @@ a {
 }
 
 .login-form > .session-submit {
- margin: 0 6px;
+ margin: 0 180px;
  background-color: #cecece;
  cursor: not-allowed;
  font-size: 14px;
@@ -152,27 +155,26 @@ a {
 
 
 .text-email {
-  position: relative;
-  margin: 0 0 18px;
-  box-sizing: border-box;
-  display: block;
-  color: #333;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: left;
-  font-family: Proxima Nova, sans-serif;
+font-family: Montserrat;
+display: block;
+font-size: 18px;
+padding-left: 15px;
+padding-right: 15px;
+color: #333333;
+margin-left: 80px;
+margin-bottom: 20px;
 }
 
 .text-password {
-   position: relative;
-  margin: 0 0 18px;
-  box-sizing: border-box;
+  font-family: Montserrat;
   display: block;
-  color: #333;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: left;
-  font-family: Proxima Nova, sans-serif;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #333333;
+  width: 435px;
+  margin-left: 80px;
+  margin-bottom: 20px;
 }
 
 .other-form > button {
@@ -299,18 +301,13 @@ footer {
 }
 .footer-1 h1 {
   font-size: 24px;
-  font-weight: 400;
   background-image: url(https://www.brainscape.com/assets/white-right-chevron.png);
-  background-position: 76%;
+  background-position: 75%;
   background-size: 14px;
-  padding-right: 24px;
+  padding-right: 75px;
   background-repeat: no-repeat;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  display: block;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-family: sans-serif;
+  width: auto;
 }
 
 p {
@@ -336,20 +333,14 @@ p {
 }
 
 .footer-2 h1 {
-  font-size: 24px;
-  font-weight: 400;
+ font-size: 24px;
   background-image: url(https://www.brainscape.com/assets/white-right-chevron.png);
-  background-position: 70%;
+  background-position: 75%;
   background-size: 14px;
-  padding-right: 24px;
+  padding-right: 75px;
   background-repeat: no-repeat;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  display: block;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-family: sans-serif;
-  text-align: center;
+  width: auto;
 }
 
 .footer-3 {
@@ -364,20 +355,14 @@ p {
 }
 
 .footer-3 h1{
-    font-size: 24px;
-    font-weight: 400;
-    background-image: url(https://www.brainscape.com/assets/white-right-chevron.png);
-    background-position: 76%;
-    background-size: 14px;
-    padding-right: 24px;
-    background-repeat: no-repeat;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    display: block;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-family: sans-serif;
-    text-align: center;
+   font-size: 24px;
+  background-image: url(https://www.brainscape.com/assets/white-right-chevron.png);
+  background-position: 75%;
+  background-size: 14px;
+  padding-right: 75px;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  width: auto;
 }
 
 .search {
@@ -480,14 +465,4 @@ p {
   border: none;
   color: white;
   font-family: sans-serif;
-  width: 10vw;
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  text-align: center;
-  cursor: default;
-  font: 400 13.3333px Arial;
-  text-rendering: auto;
 }
