@@ -424,7 +424,7 @@ p {
   color: #426d79;
   font-weight: 100;
   font-size: 24px;
-  width: 88.7%;
+  width: 100%;
   border: 0;
   background: transparent none repeat scroll 0 0;
   background-color: transparent;
@@ -441,9 +441,6 @@ p {
   -webkit-rtl-ordering: logical;
   cursor: text;
   margin: 0em;
-  font: 400 13.3333px Arial;
-  padding: 1px 0px;
-  margin: 0;
 }
 
 .search-button {
