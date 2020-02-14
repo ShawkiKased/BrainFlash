@@ -275,3 +275,222 @@ a {
   background-repeat: no-repeat;
   height: 10px;
 }
+
+footer {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.footer-1 {
+  width: 33.333333%;
+  height: 133px;
+  background-color: rgba(0,170,216,0.7);
+  text-align: center;
+  margin-right: 1px;
+  margin-top: 1px;
+  display: block;
+  font-family: sans-serif;
+}
+.footer-1 h1 {
+  font-size: 24px;
+  font-weight: 400;
+  background-image: url(https://www.brainscape.com/assets/white-right-chevron.png);
+  background-position: 76%;
+  background-size: 14px;
+  padding-right: 24px;
+  background-repeat: no-repeat;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  display: block;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: sans-serif;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.footer-2 {
+  width: 33.333333%;
+  height: 133px;
+  background-color: rgba(0,170,216,0.7);
+  text-align: center;
+  margin-top: 1px;
+  display: block;
+  font-family: sans-serif;
+}
+
+.footer-2 h1 {
+  font-size: 24px;
+  font-weight: 400;
+  background-image: url(https://www.brainscape.com/assets/white-right-chevron.png);
+  background-position: 70%;
+  background-size: 14px;
+  padding-right: 24px;
+  background-repeat: no-repeat;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  display: block;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.footer-3 {
+    width: 33.33333%;
+    height: 133px;
+    background-color: rgba(0,170,216,0.7);
+    text-align: center;
+    margin-left: 1px;
+    margin-top: 1px;
+    display: block;
+    font-family: sans-serif;
+}
+
+.footer-3 h1{
+    font-size: 24px;
+    font-weight: 400;
+    background-image: url(https://www.brainscape.com/assets/white-right-chevron.png);
+    background-position: 76%;
+    background-size: 14px;
+    padding-right: 24px;
+    background-repeat: no-repeat;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.search {
+  padding-left: 76px;
+  background-color: rgba(255,255,255,0.8);
+  height: 60px;
+  width: 100%;
+  padding-right: 9.9px;
+  transition: none;
+  flex-direction: row;
+  position: absolute;
+  bottom: 139px;
+  box-sizing: border-box;
+  display: block;
+  font-family: sans-serif;
+  margin: 0;
+  color: -internal-root-color;
+}
+
+.search-blurb {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: white;
+  position: absolute;
+  bottom: 73px;
+  left: 24px;
+  display: block;
+  margin: 0;
+}
+
+.mag-glass {
+  padding-top: 13px;
+  height: 34px;
+  color: #28a5dc;
+  position: absolute;
+  left: 24px;
+  overflow: hidden;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.search-field {
+  color: #426d79;
+  font-weight: 100;
+  font-size: 24px;
+  width: 88.7%;
+  border: 0;
+  background: transparent none repeat scroll 0 0;
+  background-color: transparent;
+  padding-top: 15px;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  -webkit-appearance: textfield;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 0px;
+  margin: 0;
+}
+
+.search-button {
+  background-color: #28a5dc;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  color: white;
+  font-family: sans-serif;
+  width: 10vw;
+  position: absolute;
+  right: 0;
+  -webkit-appearance: button;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 6px;
+  margin: 0;
+}
+
+.search-button span {
+  background-color: #28a5dc;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  color: white;
+  font-family: sans-serif;
+  width: 10vw;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: center;
+  cursor: default;
+  font: 400 13.3333px Arial;
+  text-rendering: auto;
+}
