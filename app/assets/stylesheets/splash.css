@@ -58,6 +58,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   background: white;
+  border-radius: 25px;
 }
 
 .login-form-box > ul {
@@ -67,7 +68,7 @@ a {
 .login-form-box {
   width: 700px;
   height: 500px;
-  align-items: center;
+  /* align-items: center;
   flex-direction: column;
   justify-content: space-between;
   max-height: calc(100vh - 60px);
@@ -80,7 +81,8 @@ a {
   font-family: Montserrat;
   box-sizing: border-box;
   display: block;
-  margin-top: 0em;
+  margin-top: 0em; */
+  border-radius: 25px;
 }
 
 .close-x {
