@@ -18,7 +18,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
             <button className="companies">Companies</button>
             <button className="about">About</button>
             <button className="login-button" onClick={() => openModal('Login')}>Login</button>
-            <button className="started-button" onClick={() => openModal('Get Started!')}>Get Started!</button>
+            <button className="started-button" onClick={() => openModal('Get Started')}>Get Started</button>
           </nav>
          </>
         );

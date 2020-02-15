@@ -3,17 +3,16 @@ html {
 }
 
 h1 {
-    font-size: 50px;
-    color: #fff;
-    font-family: Proxima Nova, sans-serif;
-    font-weight: 400;
-    width: 50%;
-    line-height: 120%;
-    margin: 0;
-    text-shadow: none;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-
+  font-size: 50px;
+  color: #fff;
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 400;
+  width: 45%;
+  line-height: 120%;
+  margin-left: 50px;
+  text-shadow: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 
 .h1 {
@@ -22,9 +21,9 @@ h1 {
   font-family: Proxima Nova, sans-serif;
   color: #fff;
   font-weight: 100;
-  margin: 0;
   text-align: left;
   box-sizing: border-box;
+  margin-left: 50px;
 }
 
 .h2 {
@@ -33,9 +32,9 @@ h1 {
   font-family: Proxima Nova, sans-serif;
   color: #fff;
   font-weight: 100;
-  margin: 0;
   text-align: left;
   box-sizing: border-box;
+  margin-left: 50px;
 }
 
 a {
@@ -66,8 +65,8 @@ a {
 }
 
 .login-form-box {
-  width: 700px;
-  height: 500px;
+  width: 760px;
+  height: 560px;
   /* align-items: center;
   flex-direction: column;
   justify-content: space-between;
@@ -111,12 +110,12 @@ a {
 }
 
 .login-form {
-  padding-top: 8px;
+  padding-top: 275px;
   position: relative;
   width: 80%;
   box-sizing: border-box;
   display: block;
-  margin-top: 0em;
+  margin-left: 240px;
   color: #333;
   font-size: 14px;
   font-weight: 400;
@@ -158,13 +157,16 @@ a {
 
 .text-email {
 font-family: Montserrat;
-display: block;
 font-size: 18px;
-padding-left: 15px;
 padding-right: 15px;
-color: #333333;
-margin-left: 80px;
+margin-left: 98px;
 margin-bottom: 20px;
+}
+
+.login-input {
+  border: none;
+  border-bottom:3px solid #eee;
+  color: #197096
 }
 
 .text-password {
@@ -191,6 +193,9 @@ margin-bottom: 20px;
   font-weight: 400;
   text-align: left;
   font-family: Proxima Nova, sans-serif;
+  background-color: white;
+  margin-left: 300px;
+  margin-top: 30px;
 }
 
 .header-name {

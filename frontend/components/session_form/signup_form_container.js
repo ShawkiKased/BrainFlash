@@ -7,7 +7,7 @@ import { openModal, closeModal } from '../../actions/modal_actions';
 const mStP = ({ errors }) => {
     return {
         errors: errors.session,
-        formType: 'Get Started!'
+        formType: 'Register'
     };
 }
 
@@ -17,7 +17,7 @@ const mDtP = dispatch => {
         processForm: user => dispatch(signup(user)),
         otherForm: (
             <button onClick={() => dispatch(openModal('Login'))}>
-                Login
+                Already have an account?
             </button>
         ),
         closeModal: () => dispatch(closeModal())
