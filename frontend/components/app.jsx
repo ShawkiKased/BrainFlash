@@ -8,11 +8,11 @@ import SplashForm from '../components/splash_form/splash_container';
 
 const App = () => (
     <>
-      <Modal />
       <header> 
-        <GreetingContainer className="greeting" />
-        <Route exact path="/" component={SplashForm} />
+        <Modal />
       </header>
+      <GreetingContainer className="greeting" />
+      <Route exact path="/" component={SplashForm} />
     </>
 );
 
