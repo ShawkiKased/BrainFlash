@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { createDeck, removeDeck } from '../../actions/deck_actions';
-import AddDeckForm from './add_deck_from';
+import AddDeckForm from './add_deck_form';
 
 const mStP = state => {
     return {

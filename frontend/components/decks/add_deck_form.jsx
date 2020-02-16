@@ -1,6 +1,6 @@
 import React from 'react';
 
-class AddDeckFrom extends React.Component {
+class AddDeckForm extends React.Component {
 
     render() {
         return(
@@ -9,3 +9,5 @@ class AddDeckFrom extends React.Component {
         );
     }
 }
+
+export default AddDeckForm;

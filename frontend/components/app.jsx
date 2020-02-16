@@ -7,13 +7,14 @@ import { Route } from 'react-router-dom';
 import Modal from './modal/modal';
 import SplashForm from '../components/splash_form/splash_container';
 
+
 const App = () => (
     <>
-        <Modal />
-        <header> 
-          <GreetingContainer className="greeting" />
-          <Route exact path="/" component={SplashForm} />
-        </header>
+      <Modal />
+      <header> 
+        <GreetingContainer className="greeting" />
+        <Route exact path="/" component={SplashForm} />
+      </header>
     </>
 );
 
