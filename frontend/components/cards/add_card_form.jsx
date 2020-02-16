@@ -10,3 +10,5 @@ class AddCardFrom extends React.Component {
         );
     }
 }
+
+export default AddCardForm;

@@ -10,3 +10,5 @@ class DeckShow extends React.Component {
         );
     }
 }
+
+export default DeckShow;
