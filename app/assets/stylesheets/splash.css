@@ -74,32 +74,39 @@ a {
 
 .close-x {
   display: flex;
-  font-size: 15px;
+  font-size: 20px;
   position: absolute;
   top: 5px;
   right: 23px;
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  border-radius: 50%;
   color: #777;
   cursor: pointer;
   height: 36px;
   width: 36px;
   box-sizing: border-box;
-  font-weight: bold;
   text-align: left;
-  font-family: Proxima Nova, sans-serif;
   box-sizing: border-box;
-  padding: 5px 10px 5px 10px;
-  padding-left: 10px;
-  padding-right: 10ps;
   border: 0px;
   border-radius: 2px;
+  font-family: sans-serif;
+  padding-top: 15px;
+}
+
+.branding {
+  background-image: url(https://www.brainscape.com/assets/auth/logo-white.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 36px;
+  width: 36px;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 
 .login-form {
-  padding-top: 275px;
+  padding-top: 200px;
   position: relative;
   width: 80%;
   box-sizing: border-box;
@@ -135,7 +142,7 @@ a {
 }
 
 .main-form {
-  font-size: 36px;
+  font-size: 33px;
   padding: 0;
   color: #197096;
   font-family: Proxima Nova,sans-serif;
@@ -143,6 +150,7 @@ a {
   text-align: center;
   text-transform: capitalize;
   border: none;
+  padding-left: 130px;
 }
 
 

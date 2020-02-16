@@ -7,7 +7,7 @@ import { openModal, closeModal } from '../../actions/modal_actions';
 const mStP = ({ errors }) => {
     return {
         errors: errors.session,
-        formType: 'Register'
+        formType: 'Get Started'
     };
 }
 
