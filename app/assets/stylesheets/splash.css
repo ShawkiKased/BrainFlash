@@ -58,6 +58,9 @@ a {
   transform: translate(-50%, -50%);
   background: white;
   border-radius: 25px;
+  background-image: url(https://www.brainscape.com/assets/auth/registration-modal-bg-3.png);
+  background-position: 0;
+  background-repeat: no-repeat;
 }
 
 .login-form-box > ul {
@@ -67,20 +70,6 @@ a {
 .login-form-box {
   width: 760px;
   height: 560px;
-  /* align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-  max-height: calc(100vh - 60px);
-  overflow: auto;
-  color: #333;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: left;
-  background-color: white;
-  font-family: Montserrat;
-  box-sizing: border-box;
-  display: block;
-  margin-top: 0em; */
 }
 
 .close-x {
@@ -141,6 +130,8 @@ a {
  padding: 0 28.8px;
  position: relative;
  transition: all .3s;
+ margin-left: 350px;
+ margin-top: 20px;
 }
 
 .main-form {
@@ -194,7 +185,7 @@ margin-bottom: 20px;
   text-align: left;
   font-family: Proxima Nova, sans-serif;
   background-color: white;
-  margin-left: 300px;
+  margin-left: 350px;
   margin-top: 30px;
 }
 
