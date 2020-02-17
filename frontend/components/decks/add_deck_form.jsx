@@ -2,10 +2,57 @@ import React from 'react';
 
 class AddDeckForm extends React.Component {
 
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            title: ""
+        };
+
+        this.makeNewDeck = this.makeNewDeck.bind(this);
+    }
+
+    componentDidUpdate(nextProps) {
+        if (nextProps.loggedIn) {
+            this.props.history.push('/decks');
+        }
+    }
+
+    makeNewDeck(e) {
+        e.preventDefault();
+        const deck = this.state;
+        this.props.createDeck(deck);
+        this.props.closeDeckModal();
+    }
+
+    updateDeckTitle(deck) {
+        return (e) => this.setState({
+            deck: e.currentTarget.value
+        });
+    }
+
     render() {
         return(
             <>
-            
+              <div onClick={() => this.props.closeDeckModal()} className="modal-overlay" />
+              <div className="add-deck-form">
+                  <form onSubmit={this.makeNewDeck}>
+                      <p>New Deck</p>
+                      <input placeholder="e.g., Math, Science, etc"
+                        value={this.state.title}
+                        onChange={this.updateDeckTitle('title')}
+                        className="form-input"
+                        type="text" />
+                      <div className="form-buttons">
+                          <button onClick={this.props.closeDeckModal} className="cancel-button">
+                              Cancel
+                          </button>
+                          <button className="save-button">
+                              Save
+                          </button>
+                      </div>
+                  </form>
+              </div>
             </>
         );
     }
