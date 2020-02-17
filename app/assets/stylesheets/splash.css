@@ -214,6 +214,8 @@ margin-bottom: 20px;
   justify-content: space-around;
 }
 
+
+
 .logo-header {
   padding: 10px;
   padding-top: 20px;
@@ -226,11 +228,19 @@ margin-bottom: 20px;
   background: transparent;
 }
 
+.started-button:hover {
+  color: #28a5dc;
+}
+
 .login-button {
   color: white;
   outline: none;
   border: none;
   background: transparent;
+}
+
+.login-button:hover {
+  color: #28a5dc;
 }
 
 .about {
