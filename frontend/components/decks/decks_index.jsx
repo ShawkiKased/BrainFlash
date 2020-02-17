@@ -30,6 +30,15 @@ class DecksIndex extends React.Component {
             closeDeckModal={() => this.setState({showDeck: false})} />
           : null
         );
+        debugger
+        const deckList = this.props.decks.map( deck => {
+                debugger
+                return(
+                <ul className="deck-list">
+                    <li>{deck.title}</li>
+                </ul>
+                );
+            })
         return(
             <>
                 {addDeck}
@@ -41,14 +50,7 @@ class DecksIndex extends React.Component {
                     </div>
                 </div>
                 <div className="deck-outer" >
-
-                    {
-                        this.props.decks.map( deck => {
-                            <ul className="deck-list">
-                                {deck.title}
-                            </ul>
-                        })
-                    }
+                    { deckList }
                 </div>
             </>
         );

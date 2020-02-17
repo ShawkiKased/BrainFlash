@@ -115,5 +115,10 @@
   background: #29a5dc;
 }
 
+.deck-list  li {
+    height: 10px;
+    width: 10px;
+}
+
  /* */
 
