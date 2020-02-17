@@ -1,7 +1,10 @@
 import React from 'react';
 
 class DecksIndex extends React.Component {
+    constructor(props) {
+        super(props);
 
+    }
     componentDidMount() {
         this.props.fetchDecks();
     }
@@ -9,7 +12,7 @@ class DecksIndex extends React.Component {
     render() {
         return(
             <>
-                <h2> Welcome to your Deck Universe! Click a deck to get started!</h2>
+                <h2 className="welcome-deck"> Welcome to your Deck Universe! Click a deck to get started!</h2>
             </>
         );
     }

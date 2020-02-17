@@ -1,6 +1,6 @@
-html {
+/* html {
     background-image: url(https://www.brainscape.com/assets/home/main.jpg);
-}
+} */
 
 h1 {
   font-size: 50px;
@@ -195,11 +195,6 @@ margin-bottom: 20px;
   background-color: white;
   margin-left: 350px;
   margin-top: 30px;
-}
-
-.header-name {
-  color: #fff;
-  font-size: 50px;
 }
 
 .login-signup {
