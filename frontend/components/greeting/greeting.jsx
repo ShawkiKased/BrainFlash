@@ -25,10 +25,27 @@ const Greeting = ({ currentUser, logout, openModal }) => {
     
     const personalGreeting = () => {
         return (
-        <div className="header-group">
-            <h2 className="header-name">Welcome Back!</h2>
-            <button className="header-button" onClick={logout}>Log Out</button>
-        </div>
+        <>
+            <nav className="login-signup">
+                <div className="logo-header">
+                    <a className="header-link" href="#/">
+                        <span className="brain">BRAIN</span>
+                        <span className="flash">FLASH</span>
+                    </a>
+                </div>
+                <a className="deck-link" href="#/decks">
+                    <button className="find">Find Flashcards</button>
+                    <button className="make">Make Flashcards</button>
+                    <button className="educators">Educators</button>
+                    <button className="companies">Companies</button>
+                    <button className="about">About</button>
+                </a>
+            </nav>
+            <div className="header-group">
+                <h2 className="header-name">Welcome Back!</h2>
+                <button className="header-button" onClick={logout}>Log Out</button>
+            </div>
+        </>
         );
     };
 
