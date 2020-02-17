@@ -7,13 +7,13 @@ const mStP = (state, ownProps) => {
         deck: state.entities.deck[ownProps.match.params.deckId],
         deckTitle: state.entities.title
     };
-}
+};
 
 const mDtP = dispatch => {
     return {
         fetchDeck: deckId => dispatch(fetchDeck(deckId)),
         deleteDeck: deckId => dispatch(deleteDeck(deckId))
     };
-}
+};
 
 export default connect(mStP,mDtP)(DeckShow);

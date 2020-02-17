@@ -14,9 +14,6 @@ class DecksIndex extends React.Component {
     }
     componentDidMount() {
         this.props.fetchDecks();
-        if (this.props && this.props.decks.length != 0) {
-            this.props.history.push(`/decks/${this.props.decks[0].id}`);
-        }
     }
 
     flipDeck() {
@@ -29,8 +26,8 @@ class DecksIndex extends React.Component {
     render() {
 
         const addDeck = (this.state.showDeck ? 
-          <AddDeckContainer showModal={this.state.showDeckForm}
-            closeDeckModal={() => this.setState({showDeckForm: false})} />
+          <AddDeckContainer showModal={this.state.showDeck}
+            closeDeckModal={() => this.setState({showDeck: false})} />
           : null
         );
         return(

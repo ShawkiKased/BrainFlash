@@ -5,7 +5,7 @@ import { Route } from 'react-router-dom';
 import Modal from './modal/modal';
 import SplashForm from '../components/splash_form/splash_container';
 import DecksIndexContainer from '../components/decks/decks_index_container';
-
+import DeckShowContainer from '../components/decks/deck_show_container';
 
 
 const App = () => (
@@ -16,6 +16,7 @@ const App = () => (
       <GreetingContainer className="greeting" />
       <Route exact path="/" component={SplashForm} />
       <Route path="/decks" component={DecksIndexContainer} />
+      <Route path="/decks/:deckId" component={DeckShowContainer} />
     </>
 );
 
