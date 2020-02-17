@@ -41,6 +41,14 @@ class DecksIndex extends React.Component {
                     </div>
                 </div>
                 <div className="deck-outer" >
+
+                    {
+                        this.props.decks.map( deck => {
+                            <ul className="deck-list">
+                                {deck.title}
+                            </ul>
+                        })
+                    }
                 </div>
             </>
         );

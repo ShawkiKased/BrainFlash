@@ -12,12 +12,6 @@ class AddDeckForm extends React.Component {
         this.makeNewDeck = this.makeNewDeck.bind(this);
     }
 
-    componentDidUpdate(nextProps) {
-        if (nextProps.loggedIn) {
-            this.props.history.push('/decks');
-        }
-    }
-
     makeNewDeck(e) {
         e.preventDefault();
         const deck = this.state;
@@ -25,9 +19,9 @@ class AddDeckForm extends React.Component {
         this.props.closeDeckModal();
     }
 
-    updateDeckTitle(deck) {
-        return (e) => this.setState({
-            [deck]: e.currentTarget.value
+    update(deck) {
+        return e => this.setState({
+            [deck]: e.target.value
         });
     }
 
@@ -42,7 +36,7 @@ class AddDeckForm extends React.Component {
                         type="text"
                         placeholder="e.g., Math, Science, etc"
                         value={this.state.title}
-                        onChange={this.updateDeckTitle('title')}
+                        onChange={this.update('title')}
                         className="form-input" />
                       <div className="form-buttons">
                           <button onClick={this.props.closeDeckModal} className="cancel-button">
