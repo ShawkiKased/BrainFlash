@@ -42,4 +42,80 @@
   margin-right: 28%;
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0, 0.44);
+  z-index: 2000;
+}
+
+.add-deck-form {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 29.2%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  background: #f5f5f5;
+  font-size: 18px;
+  font-weight: bolder;
+  opacity: 1;
+  z-index: 5000;
+  border: 2px solid lightblue;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.add-deck-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 4px;
+  margin-right: 28%;
+}
+
+.form-input {
+  border: 1px solid #cccccc;
+  padding: 6px 12px;
+  font-size: 18px;
+  border-radius: 4px;
+  padding-top: 8px;
+}
+
+.form-buttons {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.cancel-button {
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: 3px;
+  background: #acacac;
+}
+
+.save-button {
+  color: white;
+  border: 1px solid transparent;
+  margin: 7px;
+  padding: 5px 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: 3px;
+  background: #29a5dc;
+}
+
+
+
+ /* */
 
