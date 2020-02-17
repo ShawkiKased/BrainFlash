@@ -283,13 +283,6 @@ margin-bottom: 20px;
   font-family: sans-serif;
 }
 
-.logo {
-  background-image: url("logo.png");
-  background-size: 50px;
-  background-repeat: no-repeat;
-  height: 10px;
-}
-
 footer {
   color: white;
   display: flex;

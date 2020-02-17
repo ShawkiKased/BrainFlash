@@ -6,7 +6,6 @@ const Greeting = ({ currentUser, logout, openModal }) => {
          <>
           <nav className="login-signup">
             <div className="logo-header">
-              <section className="logo"></section>
               <a className="header-link" href="#/">
                   <span className="brain">BRAIN</span>
                   <span className="flash">FLASH</span>
