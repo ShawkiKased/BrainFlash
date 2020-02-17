@@ -24,20 +24,20 @@ class DeckShow extends React.Component {
 
     render() {
 
-        let deckName;
+        let deckTitle;
         let deckId;
         if(this.props.deck) {
-            deckName = this.props.deck.title;
+            deckTitle = this.props.deck.title;
             deckId = this.props.deck.id;
         } else {
-            deckName = "";
+            deckTitle = "";
         }
 
         return(
             <>
               <section>
                   <div className="deck-name">
-                      {deckName}
+                      {deckTitle}
                   </div>
                   <button className="delete-button"
                     onClick={() => this.props.deleteDeck(deckId) }>

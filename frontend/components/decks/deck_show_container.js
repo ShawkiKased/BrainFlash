@@ -1,4 +1,4 @@
-import { connect } from 'react';
+import { connect } from 'react-redux';
 import DeckShow from './deck_show';
 import { fetchDeck, deleteDeck } from '../../actions/deck_actions'
 

@@ -9,30 +9,30 @@ class DecksIndex extends React.Component {
             showDeck: false,
         };
 
-        this.flipDeck = this.flipDeck.bind(this);
+        // this.flipDeck = this.flipDeck.bind(this);
 
     }
     componentDidMount() {
         this.props.fetchDecks();
     }
 
-    flipDeck() {
-        this.setState({
-            showDeck: !this.state.showDeck
-        });
-    }
+    // flipDeck() {
+    //     this.setState({
+    //         showDeck: !this.state.showDeck
+    //     });
+    // }
 
 
     render() {
 
-        const addDeck = (this.state.showDeck ? 
-          <AddDeckContainer showModal={this.state.showDeck}
-            closeDeckModal={() => this.setState({showDeck: false})} />
-          : null
-        );
+        // const addDeck = (this.state.showDeck ? 
+        //   <AddDeckContainer showModal={this.state.showDeck}
+        //     closeDeckModal={() => this.setState({showDeck: false})} />
+        //   : null
+        // );
         return(
             <>
-                {addDeck}
+                <AddDeckContainer />
                 <h2 className="welcome-deck"> Welcome to your Deck Universe! Click a deck to get started! </h2>
                 <div className="deck-title-container">
                     <div className="deck-title">
