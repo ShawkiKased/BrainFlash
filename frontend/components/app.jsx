@@ -3,7 +3,7 @@ import GreetingContainer from './greeting/greeting_container';
 import { Route } from 'react-router-dom';
 import Modal from './modal/modal';
 import SplashForm from './splash_form/splash_container';
-import DecksIndexContainer from '.decks/decks_index_container';
+import DecksIndexContainer from './decks/decks_index_container';
 import DeckShowContainer from './decks/deck_show_container';
 import CardShowContainer from './cards/card_show_container';
 

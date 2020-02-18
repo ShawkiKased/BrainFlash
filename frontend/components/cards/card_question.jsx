@@ -1,6 +1,6 @@
 import React from 'react';
 
-class CardFront extends React.Component {
+class CardQuestion extends React.Component {
     constructor(props) {
         super(props);
     }
