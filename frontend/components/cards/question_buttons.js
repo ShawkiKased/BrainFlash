@@ -8,7 +8,7 @@ class QuestionButtons extends React.Component {
     render() {
 
         return(
-            <div className="front-button-container">
+            <div className="question-button-container">
                 click the card to reveal the answer!
             </div>
         );

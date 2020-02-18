@@ -122,5 +122,46 @@
   background-color: white;
 }
 
+.deck-name {
+  position: absolute;
+  top: 25px;
+  font-size: 38px;
+  padding: 50px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ff8a47;
+  padding: 20px;
+  margin-bottom: 40px;
+  left: 10px;
+}
+
+.dropdown {
+  position: absolute;
+  left: 684px;
+  top: 20px;
+}
+
+.settings-icon {
+  color: white;
+  background-color: #5bc0de;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  border-radius: 0px 7px 7px 0px;
+  color: white;
+  border-color: #46b8da;
+}
+
+.delete-button {
+  position: relative;
+  right: -40px;
+  top: -15px;
+  border: 1px solid gray;
+  padding: 3px 30px;
+  box-shadow: -1px 1px #dddddd;
+  font-family: inherit;
+  border-color: #dddddd;
+}
+
  /* */
 

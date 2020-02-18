@@ -20,8 +20,8 @@ class AnswerButtons extends React.Component{
                     How well did you know this?
                 </div>
                 { this.props.deck ? <Link
-                    className="back-button-container"
-                    onClick={() => {this.props.flipBack();}}
+                    className="answer-button-container"
+                    onClick={() => {this.props.flipAnswer();}}
                     to={
                         {
                         pathname: `/cards/${nextCardId}`,

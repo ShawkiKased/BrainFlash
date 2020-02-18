@@ -122,3 +122,254 @@ span.toggle-card {
 .card-list-container {
   width: 85%;
 }
+
+
+.card-text {
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.25);
+}
+
+
+.flashcard {
+  padding: 14% 16%;
+  height: 25%;
+}
+
+.question-button-container {
+  color: #36b6da;
+  font-size: 26px;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.25);
+  background-color: #dadbdb;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  padding: 21.4px 21.4px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  color: #bfbfbf;
+  font-size: 20px;
+}
+
+.how-well {
+  position: absolute;
+  top: -55%;
+  left: 41%;
+  text-align: center;
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.answer-button-container {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  height: 100%;
+}
+
+.rank-1 {
+  color: white;
+  font-size: 24px;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.25);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #aa0080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 25px;
+}
+
+.rank-2 {
+  color: white;
+  font-size: 24px;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.25);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: #ff8a47;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 25px;
+}
+
+.rank-3 {
+  color: white;
+  font-size: 24px;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.25);
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: #ffdd00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 25px;
+}
+
+.rank-4 {
+  color: white;
+  font-size: 24px;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.25);
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background-color: #7fae2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 25px;
+}
+
+.rank-5 {
+  color: white;
+  font-size: 24px;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.25);
+  grid-column-start: 5;
+  grid-column-end: 6;
+  background-color: #00a8d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 25px;
+}
+
+.card-settings-icon {
+  color: white;
+  background-color: #5bc0de;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  border-radius: 0px 5px 5px 0px;
+  color: white;
+  left: 12px;
+  border-color: #46b8da;
+}
+
+.delete-card-button {
+  color: black;
+  position: absolute;
+  right: -136px;
+  top: 18px;
+  border: 1px solid gray;
+  padding: 3px 30px;
+  box-shadow: -1px 1px #dddddd;
+  font-family: inherit;
+  border-color: #dddddd;
+}
+
+.card-show-container {
+  display: grid;
+  grid-template-columns: 4% 21% 74.8%;
+}
+
+.progress {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 100%;
+  background-color: #333333;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.section-title {
+  color: #b0b0b0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.study-title {
+  color: #b0b0b0;
+}
+
+.current-deck-title {
+  color: white;
+  padding-left: 10px;
+}
+
+.done-button {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: inherit;
+  text-align: center;
+  text-decoration: none !important;
+  color: white;
+  background: #29a5dc;
+  padding: 12px 20px;
+  border-radius: 2px;
+  width: 35%;
+  font-size: 22px;
+  border-style: none;
+  margin: 20px;
+  position: relative;
+  left: 20%;
+}
+
+
+.done {
+  margin-left: 3px;
+}
+
+.mastery-container {
+  margin-top: 5%;
+  display: flex;
+  color: white;
+  background: #444;
+  padding: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pair-1 {
+  display: flex;
+  align-items: center;
+}
+
+.pair-2 {
+  display: flex;
+  align-items: center;
+}
+
+.card-count {
+  font-size: 42px;
+  margin-right: 15px;
+}
+
+.flashcard-container {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: #f6f6f6;
+}
+
+.card-list-array {
+  text-align: right;
+  position: relative;
+  top: 28px;
+  right: 50px;
+}
+
+
+.bottom-buttons {
+  position: relative;
+  top: -9%;
+  height: 17%;
+  margin: 49px;
+}
+
+.cards-container {
+  position: absolute;
+  top: 65px;
+  bottom: 0;
+  left: 33%;
+  width: 62vw;
+}
