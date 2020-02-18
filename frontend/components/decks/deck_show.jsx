@@ -34,7 +34,7 @@ class DeckShow extends React.Component {
         }
 
         return(
-            <>
+            <div className="cards-container">
               <section>
                   <div className="deck-name">
                       {deckTitle}
@@ -44,7 +44,8 @@ class DeckShow extends React.Component {
                         Delete
                   </button>
               </section>
-            </>
+              <CardsIndexContainer/>
+            </div>
         );
     }
 }

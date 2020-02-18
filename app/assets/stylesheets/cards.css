@@ -1,0 +1,124 @@
+.add-card-form {
+  position: fixed;
+  bottom: 40%;
+  left: 20%;
+  z-index: 5000;
+  background: #f5f5f5;
+  width: 63%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  border: 3px solid #ff8a47;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+
+}
+
+.add-card-input {
+  border: 1px solid #cccccc;
+  padding: 6px 12px;
+  font-size: 18px;
+  border-radius: 4px;
+  padding-top: 8px;
+  margin-top: 2px;
+  margin-right: 17px;
+  width: 20%;
+}
+
+.card-list-inner {
+  width: 83%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 2px solid #dddddd;
+  font-family: 'Montserrat', sans-serif;
+  height: 35px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.list-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-preview-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 40%;
+}
+
+.study-set {
+  position: absolute;
+  left: 650px;
+  display: flex;
+  align-items: center;
+  background-color: #29a5dc;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.study-set:hover {
+  background-color: darken(#29a5dc, 15%);
+}
+
+.study-button {
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.card-list-outer {
+  background-color: #ffffff;
+  margin-top: 50px;
+  margin-top: 120px;
+}
+
+span.toggle-card {
+  border-radius: 7px 0px 0px 7px;
+  color: white;
+  position: absolute;
+  left: 550px;
+  top: 20px;
+}
+
+.toggle-card {
+  background-color: #5cb85c;
+  font-family: 'Montserrat', sans-serif;
+  width: 136px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 45%;
+}
+
+.add-cards {
+  margin-left: 14px;
+  font-size: 17.5px;
+}
+
+.cards {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px 10px;
+  border-top: 1px solid #eeeeee;
+  padding-top: 20px;
+}
+
+.card-list-container {
+  width: 85%;
+}
