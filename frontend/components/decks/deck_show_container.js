@@ -4,7 +4,7 @@ import { fetchDeck, deleteDeck } from '../../actions/deck_actions'
 
 const mStP = (state, ownProps) => {
     return {
-        deck: state.entities.deck[ownProps.match.params.deckId],
+        deck: state.entities.decks[ownProps.match.params.deckId],
         deckTitle: state.entities.title
     };
 };

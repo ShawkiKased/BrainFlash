@@ -6,7 +6,8 @@ import { fetchDeck } from '../../actions/deck_actions';
 const mStP = (state, ownProps) => {
     return{
         cards: state.entities.cards,
-        deck: (state.entities.deck[ownProps.match.params.deckId]) || { cardIds: [] }
+        deck: (state.entities.deck[ownProps.match.params.deckId]) || { cardIds: [] },
+        hideDelete: ownProps.hideDelete
     };
 }
 

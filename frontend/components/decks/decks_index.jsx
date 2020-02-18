@@ -1,5 +1,6 @@
 import React from 'react';
 import AddDeckContainer from '../decks/add_deck_container';
+import { Link } from 'react-router-dom';
 
 class DecksIndex extends React.Component {
     constructor(props) {
