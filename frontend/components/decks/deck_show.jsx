@@ -1,5 +1,5 @@
 import React from 'react';
-
+import CardsIndexContainer from '../cards/cards_index_container';
 
 class DeckShow extends React.Component {
 

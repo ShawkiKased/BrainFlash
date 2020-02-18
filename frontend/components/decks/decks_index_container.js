@@ -4,7 +4,6 @@ import { selectAllDecks } from '../../actions/selectors';
 import { fetchDecks, createDeck } from '../../actions/deck_actions';
 
 const mStP = state => {
-    debugger
     return {
         // decks: selectAllDecks(state)
         decks: Object.values(state.entities.decks)

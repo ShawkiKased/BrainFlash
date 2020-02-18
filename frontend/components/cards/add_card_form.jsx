@@ -1,6 +1,6 @@
 import React from 'react';
 
-class AddCardFrom extends React.Component {
+class AddCardForm extends React.Component {
     constructor(props) {
         super(props);
 

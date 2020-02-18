@@ -9,14 +9,14 @@ class DecksIndex extends React.Component {
             showDeck: false,
         };
 
-        this.flipDeck = this.flipDeck.bind(this);
+        this.toggleDeck = this.toggleDeck.bind(this);
 
     }
     componentDidMount() {
         this.props.fetchDecks();
     }
 
-    flipDeck() {
+    toggleDeck() {
         this.setState({
             showDeck: !this.state.showDeck
         });
@@ -30,9 +30,8 @@ class DecksIndex extends React.Component {
             closeDeckModal={() => this.setState({showDeck: false})} />
           : null
         );
-        debugger
+
         const deckList = this.props.decks.map( deck => {
-                debugger
                 return(
                 <ul className="deck-list">
                     <li>{deck.title}</li>
@@ -44,7 +43,7 @@ class DecksIndex extends React.Component {
                 {addDeck}
                 <h2 className="welcome-deck"> Welcome to your Deck Universe! Click a deck to get started! </h2>
                 <div className="deck-title-container">
-                    <button className="add-start" onClick={this.flipDeck} >Create New Deck</button>
+                    <button className="add-start" onClick={this.toggleDeck} >Create New Deck</button>
                     <div className="deck-title">
                         Decks
                     </div>
