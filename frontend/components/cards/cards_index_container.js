@@ -3,11 +3,19 @@ import CardsIndex from './cards_index';
 import {createCard, deleteCard } from '../../actions/card_actions';
 import { fetchDeck } from '../../actions/deck_actions';
 
-const mStP = (state, ownProps) => {
-    return{
+// const mStP = (state, ownProps) => {
+//     return{
+//         cards: state.entities.cards,
+//         deck: (state.entities.decks[ownProps.match.params.deckId]) || { cardIds: [] },
+//         hideDelete: ownProps.hideDelete
+//     };
+// }
+
+const mStP = state => {
+    return {
         cards: state.entities.cards,
-        deck: (state.entities.deck[ownProps.match.params.deckId]) || { cardIds: [] },
-        hideDelete: ownProps.hideDelete
+        deck: state.entities.decks,
+        hideDelete: state.hideDelete
     };
 }
 

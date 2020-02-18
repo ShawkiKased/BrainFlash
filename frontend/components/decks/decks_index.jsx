@@ -59,7 +59,6 @@ class DecksIndex extends React.Component {
                                         <div className="sidebar-title">
                                             {deck.title}
                                         </div>
-                                        <div className="gray-bar"></div>
                                     </div>
                                 </ul>
                             </Link>
