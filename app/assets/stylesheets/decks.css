@@ -4,14 +4,26 @@
   text-shadow: 0px 0px 5px #000000;
 }
 
+
 .welcome-deck {
-    font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 44%;
+  right: -6.2%;
+  font-size: 36px;
+  color: white;
+  background-color: rgba(52,64,82,.5);
+  padding: 5%;
+}
+
+.welcome-image {
+  margin-top: 5%;
 }
 
 
 .deck-title-container {
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
   padding-right: 10px;
   height: 56px;
   display: flex;
@@ -32,6 +44,7 @@
   height: 80vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  background-color:white;
 }
 
 .deck-title {

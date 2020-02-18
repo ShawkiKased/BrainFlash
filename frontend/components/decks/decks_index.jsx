@@ -42,11 +42,12 @@ class DecksIndex extends React.Component {
             const showBackground = (this.props.location.pathname.length < 7 ?
                 <div className="background-img-container">
                 <br/>
+                <img className="welcome-image"  src={window.background}/>
                 <div className="welcome-deck">Welcome to your Deck Universe! Click a deck to get started!</div>
+                <br/>
             </div>
             : ""
             );
-            
             
             const deckList = this.props.decks.map( deck => {
                 return(
