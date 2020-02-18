@@ -7,6 +7,8 @@ class DeckShow extends React.Component {
         super(props);
 
         this.fetchDeck = this.props.fetchDeck.bind(this);
+        this.hideDelete = this.props.hideDelete.bind(this);
+        this.toggleDelete =  this.props.toggleDelete.bind(this);
 
     }
 
@@ -19,6 +21,14 @@ class DeckShow extends React.Component {
         if (this.props.match.params.deckId !== nextProps.match.params.deckId) {
             this.props.fetchDeck(nextProps.match.params.deckId);
         }
+    }
+
+    hideDelete() {
+        this.setState({showDropdown: false});
+    }
+
+    toggleDelete() {
+        this.setState({showDropdown: !this.state.showDropdown});
     }
 
 
@@ -39,12 +49,21 @@ class DeckShow extends React.Component {
                   <div className="deck-name">
                       {deckTitle}
                   </div>
-                  <button className="delete-button"
-                    onClick={() => this.props.deleteDeck(deckId) }>
-                        Delete
-                  </button>
+                  <div className="dropdown">
+                      <div className="settings-icon"
+                        onClick={() =>  this.toggleDelete()} >
+                      </div>
+                      { this.state.showDropdown ? 
+                        <button className="delete-button"
+                          onClick={() => this.props.deleteDeck(deckId) }>
+                              Delete
+                        </button> : ""
+                      }
+                  </div>
               </section>
-              <CardsIndexContainer/>
+              <CardsIndexContainer
+                hideDelete = {() => this.hideDelete()}
+              />
             </div>
         );
     }

@@ -1,5 +1,6 @@
 import React from 'react';
-import AddCardContainer from '../cards/add_card_container';
+import AddCardContainer from './add_card_container';
+import CardDelete from './card_delete';
 import { Link } from 'react-router-dom';
 
 
@@ -53,6 +54,11 @@ class CardsIndex extends React.Component {
                                 Study
                             </Link> : "" 
                             }
+                            <CardDelete
+                              hideDeleteDeck={this.props.hideDelete}
+                              deleteCard={this.props.deleteCard}
+                              card = {card}
+                            />
                         </li>
                     </ul>
                 </div>
