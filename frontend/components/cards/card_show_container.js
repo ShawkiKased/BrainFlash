@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import CardShow from './card_show';
 import { deleteCard } from '../../actions/card_actions';
+import { withRouter } from 'react-router-dom';
 
 const mStP = (state, ownProps) => {
     return {
@@ -17,4 +18,4 @@ const mDtP = dispatch => {
     };
 }
 
-export default connect(mStP, mDtP)(CardShow);
+export default connect(mStP, mDtP)(withRouter(CardShow));

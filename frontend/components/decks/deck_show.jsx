@@ -1,5 +1,6 @@
 import React from 'react';
 import CardsIndexContainer from '../cards/cards_index_container';
+import { withRouter } from 'react-router-dom';
 
 class DeckShow extends React.Component {
 
@@ -73,4 +74,4 @@ class DeckShow extends React.Component {
     }
 }
 
-export default DeckShow;
+export default withRouter(DeckShow);

@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import DecksIndex from './decks_index';
 import { selectAllDecks } from '../../actions/selectors';
 import { fetchDecks, createDeck } from '../../actions/deck_actions';
+import { withRouter } from 'react-router-dom';
 
 const mStP = state => {
     return {
@@ -17,4 +18,4 @@ const mDtP = dispatch => {
     };
 }
 
-export default connect(mStP,mDtP)(DecksIndex);
+export default connect(mStP,mDtP)(withRouter(DecksIndex));

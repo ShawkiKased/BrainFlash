@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import { createCard } from '../../actions/card_actions';
 import AddCardForm from './add_card_form';
+import { withRouter } from 'react-router-dom';
 
 const mStP = (state, ownProps) => {
     return {
@@ -15,4 +16,4 @@ const mDtP = dispatch => {
     };
 }
 
-export default connect(mStP,mDtP)(AddCardForm);
+export default connect(mStP,mDtP)(withRouter(AddCardForm));
