@@ -4,9 +4,11 @@ import AddCardForm from './add_card_form';
 import { withRouter } from 'react-router-dom';
 
 const mStP = (state, ownProps) => {
+   
     return {
         cards: state.entities.cards,
-        deckId: ownProps.match.params.deckId
+
+        // deckId: ownProps.match.params.deckId
     };
 }
 

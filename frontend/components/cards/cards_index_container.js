@@ -5,7 +5,7 @@ import { fetchDeck } from '../../actions/deck_actions';
 import { withRouter } from 'react-router';
 
 // const mStP = (state, ownProps) => {
-//     debugger
+//    
 //     return{
 //         cards: state.entities.cards,
 //         deck: (state.entities.decks[ownProps.match.params.deckId]) || { cardIds: [] },
@@ -16,7 +16,7 @@ import { withRouter } from 'react-router';
 const mStP = state => {
     return {
         cards: state.entities.cards,
-        deck: state.entities.decks,
+        decks: state.entities.decks,
         hideDelete: state.hideDelete
     };
 }

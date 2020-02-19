@@ -51,7 +51,7 @@ class DecksIndex extends React.Component {
             
             const deckList = this.props.decks.map( deck => {
                 return(
-                    <div className="deck-container">
+                    <div className="deck-container" key={deck.id}>
                         <div className="deck-list">
                             <Link to={`/decks/${deck.id}`} className="in-line">
                                 <ul className="deck-list-item"

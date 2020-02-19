@@ -17,7 +17,7 @@ class AddCardForm extends React.Component {
         e.preventDefault();
         const card = this.state;
         const deckId = this.props.match.params.deckId;
-        let CardO = object.assign({}, card, {deck_id: deckId});
+        let cardO = Object.assign({}, card, {deck_id: deckId});
         this.props.createCard(cardO);
         this.props.closeCardForm();
     }

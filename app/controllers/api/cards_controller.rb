@@ -1,8 +1,9 @@
 class Api::CardsController < ApplicationController
 
     def create
+        
         @card = Card.new(card_params)
-
+        @card.author_id = current_user.id
         if @card.save
             render :show
         else
@@ -11,6 +12,7 @@ class Api::CardsController < ApplicationController
     end
 
     def show
+       
         @card = current_user.decks.find_by(params[:id])
     end
 
@@ -28,7 +30,7 @@ class Api::CardsController < ApplicationController
     private
 
     def card_params
-        params.require(:card).permit(:front, :back, :deck_id)
+        params.require(:card).permit(:question, :answer, :deck_id)
     end
     
 end

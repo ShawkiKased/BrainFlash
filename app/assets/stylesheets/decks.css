@@ -5,7 +5,7 @@
 }
 
 
-/* .welcome-deck {
+.welcome-deck {
   font-family: 'Montserrat', sans-serif;
   position: absolute;
   top: 44%;
@@ -14,7 +14,7 @@
   color: white;
   background-color: rgba(52,64,82,.5);
   padding: 5%;
-} */
+}
 
 .welcome-image {
   margin-top: 5%;

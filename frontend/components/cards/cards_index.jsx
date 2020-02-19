@@ -15,6 +15,10 @@ class CardsIndex extends React.Component {
         this.toggleCard = this.toggleCard.bind(this);
     }
 
+    componentDidMount() {
+        this.props.fetchDeck(this.props.match.params.deckId);
+    }
+
     toggleCard() {
         this.setState({
             showCard: !this.state.showCard
@@ -31,8 +35,9 @@ class CardsIndex extends React.Component {
         );
 
         const currentDeckId = this.props.match.params.deckId;
-        debugger
-        const cards = this.props.deck.cardIds.map( cardId => {
+      
+        const cards = this.props.decks[currentDeckId].cardIds.map( cardId => {
+        
             const card = this.props.cards[cardId];
 
             return (
