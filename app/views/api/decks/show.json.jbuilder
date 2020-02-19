@@ -1,4 +1,4 @@
-json.deck do
+json.set! @deck.id do
     json.extract! @deck, :id, :title, :author_id
     json.cardIds @deck.card_ids
 end
