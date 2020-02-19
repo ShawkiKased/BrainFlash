@@ -5,7 +5,6 @@ const cardsReducer = (oldState = {}, action) => {
     Object.freeze(oldState);
     switch(action.type) {
         case RECEIVE_ALL_CARDS:
-            debugger
             return oldState;
         case RECEIVE_CARD:
             return Object.assign({}, oldState, {[action.card.id]: action.card});

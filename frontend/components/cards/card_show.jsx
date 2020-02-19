@@ -4,6 +4,7 @@ import CardAnswer from './card_answer';
 import QuestionButtons from './question_buttons';
 import AnswerButtons from './answer_buttons';
 import { Link } from 'react-router-dom';
+import { FlipCard } from 'react-flop-card';
 
 
 class CardShow extends React.Component {
@@ -17,6 +18,7 @@ class CardShow extends React.Component {
         };
         this.rankScore = this.rankScore.bind(this);
     }
+
 
     rankScore(score) {
         if (score == 5) {
@@ -32,7 +34,6 @@ class CardShow extends React.Component {
         }
     }
     render() {
-        debugger
         return(
             <div  className="card-show-container">
                 <div className="progress">
@@ -68,7 +69,7 @@ class CardShow extends React.Component {
                         /
                     </div>
                     <div className="pair-2">
-                        { this.props.deck ?
+                        { this.props.deck.cardIds ?
                           <div className="card-count">
                             {this.props.deck.cardIds.length}} 
                           </div> : ""
@@ -83,7 +84,7 @@ class CardShow extends React.Component {
                 </div>
 
                 <div className="flashcard-container">
-                    { this.props.deck ? 
+                    { this.props.deck.cardIds ? 
                       <div className="card-list-array"> 
                         {this.props.deck.cardIds.indexOf(this.props.currentCard.id) + 1 }
                         {" "} of {" "}
@@ -93,7 +94,7 @@ class CardShow extends React.Component {
                     <aside>
                         <FlipCard width={"100%"} height={"100"}
                           onClick={() => this.setState({ answer: !this.state.answer })}
-                          questionChild={<CardQuestion question={this.props.currentCard ? this.props.currentCard.front : ""} />}
+                          questionChild={<CardQuestion question={this.props.currentCard ? this.props.currentCard.question : ""} />}
                           answerChild={<CardAnswer answer={this.props.currentCard ? this.props.currentCard.answer : ""} />}
                           flipped={this.state.answer}
                         />

@@ -56,6 +56,7 @@ class DecksIndex extends React.Component {
                             <Link to={`/decks/${deck.id}`} className="in-line">
                                 <ul className="deck-list-item"
                                     onClick={this.hideBackgroundImage}>
+                                    <img className="deck-img" src={window.deckicon}></img>
                                     <div className="item-title">
                                         <div className="sidebar-title">
                                             {deck.title}

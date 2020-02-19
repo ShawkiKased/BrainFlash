@@ -12,7 +12,6 @@ export const receiveAllDecks = decks => {
 }
 
 export const receiveDeck = deck => {
-    debugger
     return {
         type: RECEIVE_DECK,
         deck

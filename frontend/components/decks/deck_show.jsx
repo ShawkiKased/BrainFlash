@@ -56,7 +56,7 @@ class DeckShow extends React.Component {
                   </div>
                   <div className="dropdown">
                       <div className="settings-icon"
-                        onClick={() =>  this.toggleDelete()} >
+                        onClick={() =>  this.toggleDelete()} > X
                       </div>
                       { this.state.showDropdown ? 
                         <button className="delete-button"
