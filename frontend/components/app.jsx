@@ -1,6 +1,7 @@
 import React from "react";
 import GreetingContainer from './greeting/greeting_container';
 import { Route } from 'react-router-dom';
+import { AuthRoute } from '../util/route_util';
 import Modal from './modal/modal';
 import SplashForm from './splash_form/splash_container';
 import DecksIndexContainer from './decks/decks_index_container';

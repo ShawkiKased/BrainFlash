@@ -2,8 +2,10 @@ import { connect } from 'react-redux';
 import CardsIndex from './cards_index';
 import {createCard, deleteCard } from '../../actions/card_actions';
 import { fetchDeck } from '../../actions/deck_actions';
+import { withRouter } from 'react-router';
 
 // const mStP = (state, ownProps) => {
+//     debugger
 //     return{
 //         cards: state.entities.cards,
 //         deck: (state.entities.decks[ownProps.match.params.deckId]) || { cardIds: [] },
@@ -27,4 +29,4 @@ const mDtP = dispatch => {
     };
 }
 
-export default connect(mStP,mDtP)(CardsIndex);
+export default connect(mStP,mDtP)(withRouter(CardsIndex));

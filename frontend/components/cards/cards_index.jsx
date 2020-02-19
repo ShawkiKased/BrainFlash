@@ -31,6 +31,7 @@ class CardsIndex extends React.Component {
         );
 
         const currentDeckId = this.props.match.params.deckId;
+        debugger
         const cards = this.props.deck.cardIds.map( cardId => {
             const card = this.props.cards[cardId];
 
@@ -45,7 +46,7 @@ class CardsIndex extends React.Component {
                             { card ? <Link to={
                                 { pathname: `/cards/${card.id}`,
                                   state: {
-                                      deck: this.props.decks,
+                                      deck: this.props.deck,
                                       currentDeckId: currentDeckId
                                     }
                                 }
