@@ -163,6 +163,9 @@
   border-radius: 0px 7px 7px 0px;
   color: white;
   border-color: #46b8da;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .delete-button {

@@ -243,18 +243,6 @@ span.toggle-card {
   padding: 25px 25px;
 }
 
-.card-settings-icon {
-  color: white;
-  background-color: #5bc0de;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  position: relative;
-  border-radius: 0px 5px 5px 0px;
-  color: white;
-  left: 12px;
-  border-color: #46b8da;
-}
 
 .delete-card-button {
   color: black;
@@ -385,4 +373,7 @@ span.toggle-card {
   color: white;
   left: 12px;
   border-color: #46b8da;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
