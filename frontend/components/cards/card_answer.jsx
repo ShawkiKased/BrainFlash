@@ -6,7 +6,6 @@ class CardAnswer extends React.Component {
     }
 
     render() {
-        debugger
         return (
             <>
               <div className="card-text">

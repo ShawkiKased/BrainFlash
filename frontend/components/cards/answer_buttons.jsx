@@ -8,7 +8,6 @@ class AnswerButtons extends React.Component{
     }
 
     render() {
-        debugger
         const index = this.props.deck ?
         ((this.props.index + 1) %  this.props.length) : 0;
 
@@ -18,7 +17,7 @@ class AnswerButtons extends React.Component{
         return(
             <>
                 <div className="how-well">
-                    How well did you know this?
+                    Did you get it right?
                 </div>
                 { this.props.deck ? <Link
                     className="answer-button-container"

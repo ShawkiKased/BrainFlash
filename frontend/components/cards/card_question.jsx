@@ -6,13 +6,12 @@ class CardQuestion extends React.Component {
     }
 
     render() {
-        debugger
         return(
             <div className="flip-page">
                 <div className="card-text">
                     <div className="card-header">Q. Click The Card to Reveal the Answer!</div>
                 </div>
-                <div class="flashcard">
+                <div className="flashcard">
                     {this.props.question}
                 </div>
             </div>

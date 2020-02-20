@@ -171,6 +171,10 @@
   justify-content: center;
 }
 
+.settings-icon:hover {
+  background-color: red;
+}
+
 .delete-button {
   position: relative;
   right: -40px;
@@ -245,6 +249,10 @@
   border-radius: 7px;
   background-color: #5cb85c;
   color:white;
+}
+
+.add-start:hover {
+  background-color:darkgreen;
 }
 
  /* */
