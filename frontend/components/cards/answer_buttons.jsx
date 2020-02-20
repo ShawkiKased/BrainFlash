@@ -7,7 +7,24 @@ class AnswerButtons extends React.Component{
 
     }
 
+    // componentDidUpdate(prevProps) {
+    //     if (this.props.deck !== prevProps.deck) {
+    //         this.fetchDeck(this.props.deck);
+    //     }
+    // }
+
+    componentDidMount() {
+        const index = this.props.deck ?
+        ((this.props.index + 1) % this.props.length) : 0;
+
+        const nextCardId = this.props.deck ?
+        (this.props.deck.cardIds[index]) : 0;
+    }
+
+    
+
     render() {
+        debugger
         const index = this.props.deck ?
         ((this.props.index + 1) %  this.props.length) : 0;
 

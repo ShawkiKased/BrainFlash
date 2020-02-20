@@ -17,7 +17,6 @@ class CardShow extends React.Component {
         // this.rankScore = this.rankScore.bind(this);
     }
 
-
     // rankScore(score) {
     //     if (score == 5) {
     //         if (this.state.mastered >= this.props.deck.cardIds.length) {
@@ -32,6 +31,7 @@ class CardShow extends React.Component {
     //     }
     // }
     render() {
+        debugger
         return(
             <div  className="card-show-container">
                 <div className="progress">
@@ -57,7 +57,7 @@ class CardShow extends React.Component {
                 <div className="flashcard-container">
                     { this.props.deck.cardIds ? 
                       <div className="card-list-array"> 
-                        {this.props.deck.cardIds.indexOf(this.props.currentCard.id) + 1 }
+                        {this.props.deck.cardIds.indexOf((this.props.currentCard.id) + 1)}
                         {" "} of {" "}
                         {this.props.deck.cardIds.length}
                       </div> : "" 

@@ -10,7 +10,7 @@ const mStP = (state, ownProps) => {
     //     deck: (ownProps.location.state ? ownProps.location.state.currentDeckId : ""),
     //     answer: (ownProps.location.state ? ownProps.location.state.answer : "")
     // };
-    
+    debugger
     return {
         cards: state.entities.cards,
         currentCard: (state.entities.cards[ownProps.match.params.cardId]),
