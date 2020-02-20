@@ -19,6 +19,7 @@ const App = () => (
       <Route path="/decks" component={DecksIndexContainer} />
       <Route path="/decks/:deckId" component={DeckShowContainer} />
       <Route path="/cards/:cardId" component={CardShowContainer} />
+      <Route path="/about" component={AboutContainer} />
     </>
 );
 

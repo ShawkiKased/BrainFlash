@@ -11,7 +11,6 @@ const Greeting = ({ currentUser, logout, openModal }) => {
                   <span className="flash">FLASH</span>
               </a> 
             </div>
-            <button className="find">Find Flashcards</button>
             <button className="make">Make Flashcards</button>
             <button className="educators">Educators</button>
             <button className="companies">Companies</button>
@@ -34,7 +33,6 @@ const Greeting = ({ currentUser, logout, openModal }) => {
                     </a>
                 </div>
                 <a className="deck-link" href="#/decks">
-                    <button className="find">Find Flashcards</button>
                     <button className="make">Make Flashcards</button>
                     <button className="educators">Educators</button>
                     <button className="companies">Companies</button>
@@ -46,6 +44,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
             </nav>
             {/* <div className="header-group">
             </div> */}
+            
         </>
         );
     };

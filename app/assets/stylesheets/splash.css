@@ -238,8 +238,13 @@ margin-bottom: 20px;
 
 
 .logo-header {
+  background-image: url("logo.png");
   padding: 10px;
   padding-top: 20px;
+  padding-left: 60px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  background-repeat: no-repeat;
 }
 
 .started-button {
@@ -332,30 +337,9 @@ footer {
   flex-direction: row;
   position: absolute;
   bottom: 5px;
-  width: 100%;
+  width: 150%;
   font-family: sans-serif;
   margin: 0;
-}
-
-.footer-1 {
-  width: 33.333333%;
-  height: 133px;
-  background-color: rgba(0,170,216,0.7);
-  text-align: center;
-  margin-right: 1px;
-  margin-top: 1px;
-  display: block;
-  font-family: sans-serif;
-}
-.footer-1 h1 {
-  font-size: 24px;
-  background-image: url(https://www.brainscape.com/assets/white-right-chevron.png);
-  background-position: 75%;
-  background-size: 14px;
-  padding-right: 75px;
-  background-repeat: no-repeat;
-  font-family: sans-serif;
-  width: auto;
 }
 
 p {
@@ -413,7 +397,7 @@ p {
   width: auto;
 }
 
-.search {
+/* .search {
   padding-left: 76px;
   background-color: rgba(255,255,255,0.8);
   height: 60px;
@@ -513,4 +497,4 @@ p {
   border: none;
   color: white;
   font-family: sans-serif;
-}
+} */

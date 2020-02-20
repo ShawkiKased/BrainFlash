@@ -9,26 +9,20 @@ class SplashForm extends React.Component {
             <h2 className="h1">Learn twice as fast, and remember longer!</h2>
             <h2 className="h2">Proven by decades of cognitive science</h2>
             <footer>
-                <section className="footer-1">
-                    <h1>Browse All Flashcards</h1>
-                    <h2>
-                        <p>Made by publisher and top contributors</p>
-                    </h2>
-                </section>
-                <section className="footer-2">
+                <a className="footer-2" href="#/">
                     <h1>Make Flashcards</h1>
                     <h2>
                         <p>Create, share, and study on any device for free</p>
                     </h2>
-                </section>
-                <section className="footer-3">
+                </a>
+                <a className="footer-3" href="#/">
                     <h1>Just Make Me Smarter</h1>
                     <h2>
-                        <p>Study our famous "Knowledge Rehab" Flashcards</p>
+                        <p>Study the flashcards you created!</p>
                     </h2>
-                </section>
+                </a>
             </footer>
-            <div className="search">
+            {/* <div className="search">
                 <div className="search-blurb">Search for Brainscape Flashcards on thousands of classes:</div>
                 <div className="search-bar">
                     <svg aria-hidden="true" data-prefix="fas" data-icon="search" className="mag-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -39,7 +33,8 @@ class SplashForm extends React.Component {
                         <span>Search</span>
                     </button>
                 </div>
-            </div>
+            </div> */}
+            
             </>
         );
     }
