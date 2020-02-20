@@ -34,6 +34,7 @@ class CardShow extends React.Component {
         }
     }
     render() {
+        debugger
         return(
             <div  className="card-show-container">
                 <div className="progress">
@@ -43,11 +44,11 @@ class CardShow extends React.Component {
                                 Studying:{"  "}
                             </div>
                             <div className="current-deck-title">
-                                {"  "}{this.props ? this.props.deck.title : ""}
+                                {"  "}{this.props.deck ? this.props.deck.title : ""}
                             </div>
                         </div>
                     </section>
-                    <Link to={`/decks/${this.props.deck}`}>
+                    <Link to={`/decks/${this.props.deck.id}`}>
                         <button className="done-button">
                             <div className="done">
                                 Done
@@ -74,9 +75,6 @@ class CardShow extends React.Component {
                             {this.props.deck.cardIds.length}} 
                           </div> : ""
                         }
-                        <div className="card-count">
-                            {this.cardsLength} {" "}
-                        </div>
                         <div className="cards-mastered">
                             Total <br/> Cards
                         </div>
@@ -91,14 +89,14 @@ class CardShow extends React.Component {
                         {this.props.deck.cardIds.length}
                       </div> : "" 
                     }
-                    <aside>
+                    {/* <aside>
                         <FlipCard width={"100%"} height={"100"}
                           onClick={() => this.setState({ answer: !this.state.answer })}
                           questionChild={<CardQuestion question={this.props.currentCard ? this.props.currentCard.question : ""} />}
                           answerChild={<CardAnswer answer={this.props.currentCard ? this.props.currentCard.answer : ""} />}
                           flipped={this.state.answer}
                         />
-                    </aside>
+                    </aside> */}
                     <div className="bottom-buttons">
                         { this.state.answer ? 
                           <AnswerButtons 

@@ -72,7 +72,7 @@ class DecksIndex extends React.Component {
                 <>
                 {addDeck}
                 <div className="deck-title-container">
-                    <button className="add-start" onClick={this.toggleDeck} >Create New Deck</button>
+                    <button className="add-start" onClick={this.toggleDeck} >+ Create New Deck +</button>
                     <div className="add-deck-title">
                         Decks
                     </div>

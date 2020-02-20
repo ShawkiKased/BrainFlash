@@ -39,12 +39,12 @@ const Greeting = ({ currentUser, logout, openModal }) => {
                     <button className="educators">Educators</button>
                     <button className="companies">Companies</button>
                     <button className="about">About</button>
+                    <button className="header-button" onClick={logout}>Log Out</button>
+                    <h2 className="header-name">Welcome Back!</h2>
                 </a>
             </nav>
-            <div className="header-group">
-                <h2 className="header-name">Welcome Back!</h2>
-                <button className="header-button" onClick={logout}>Log Out</button>
-            </div>
+            {/* <div className="header-group">
+            </div> */}
         </>
         );
     };

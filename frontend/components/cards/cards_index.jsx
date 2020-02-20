@@ -57,7 +57,7 @@ class CardsIndex extends React.Component {
                                 }
                             }
                             className="study-button">
-                                Study
+                               = Study =
                             </Link> : "" 
                             }
                             <CardDelete
@@ -76,7 +76,7 @@ class CardsIndex extends React.Component {
             <div className="card-list-outer">
                 <span className="toggle-card" onClick={() => this.toggleCard()}>
                     <div className="add-cards">
-                        Add Cards
+                        + Add Cards +
                     </div>
                 </span>
 

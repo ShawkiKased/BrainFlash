@@ -285,6 +285,17 @@ margin-bottom: 20px;
   background: transparent;
 }
 
+.header-button {
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.header-button:hover {
+  color: orange;
+}
+
 .brain {
   font-weight: 800;
   font-size: 17px;

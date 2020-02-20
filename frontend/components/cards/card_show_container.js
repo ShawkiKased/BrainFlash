@@ -4,11 +4,19 @@ import { deleteCard } from '../../actions/card_actions';
 import { withRouter } from 'react-router-dom';
 
 const mStP = (state, ownProps) => {
+    debugger
+    // return {
+    //     cards: state.entities.cards,
+    //     currentCard: (state.entities.cards[ownProps.match.params.cardId]),
+    //     deck: (ownProps.location.state ? ownProps.location.state.currentDeckId : ""),
+    //     answer: (ownProps.location.state ? ownProps.location.state.answer : "")
+    // };
+    
     return {
         cards: state.entities.cards,
         currentCard: (state.entities.cards[ownProps.match.params.cardId]),
-        deck: (ownProps.location.state ? ownProps.location.state.currentDeckId : ""),
-        answer: (ownProps.location.state ? ownProps.location.state.answer : "")
+        deck: (ownProps.location.state ? state.entities.decks[ownProps.location.state.currentDeckId] : ""),
+        answer: (ownProps.location.state ? state.entities.cards[ownProps.match.params.cardId].answer : "")
     };
 }
 
