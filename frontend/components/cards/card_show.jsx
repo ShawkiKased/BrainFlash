@@ -45,23 +45,16 @@ class CardShow extends React.Component {
                             </div>
                         </div>
                     </section>
-                    <Link to={`/decks/${this.props.deck.id}`}>
-                        <button className="done-button">
-                            <div className="done">
-                                Done
-                            </div>
-                        </button>
-                    </Link>
                 </div>
                 
                 <div className="flashcard-container">
-                    { this.props.deck.cardIds ? 
+                    {/* { this.props.deck.cardIds ? 
                       <div className="card-list-array"> 
                         {this.props.deck.cardIds.indexOf((this.props.currentCard.id) + 1)}
                         {" "} of {" "}
                         {this.props.deck.cardIds.length}
                       </div> : "" 
-                    }
+                    } */}
                     <button onClick={() => this.setState({ answer: !this.state.answer })}>
                         <CardQuestion question={this.props.currentCard ? this.props.currentCard.question : ""} />
                     </button>

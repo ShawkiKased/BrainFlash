@@ -81,8 +81,10 @@
 
 .card-list-outer {
   background-color: #ffffff;
-  margin-top: 50px;
   margin-top: 120px;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
 }
 
 span.toggle-card {
@@ -103,6 +105,7 @@ span.toggle-card {
   position: absolute;
   top: 20px;
   left: 45%;
+  margin-top: 23px;
 }
 
 .toggle-card:hover {
@@ -117,10 +120,12 @@ span.toggle-card {
 .cards {
   font-weight: bold;
   font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
-  padding: 5px 10px;
+  font-family: 'Montserrat' sans-serif;
   border-top: 1px solid #eeeeee;
-  padding-top: 20px;
+  padding-left: 350px;
+  border: 5px solid navy;
+  background-color: rgba(0,170,216,0.7);
+  color: white;
 }
 
 .card-list-container {
@@ -237,41 +242,21 @@ span.toggle-card {
 .section-title {
   color: #b0b0b0;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .study-title {
   color: #b0b0b0;
-  font-size: 20px;
+  font-size: 50px;
+  padding-left: 40px;
+  padding-top: 10px;
 }
 
 .current-deck-title {
   color: white;
-  padding-left: 10px;
-  font-size: 20px;
-}
-
-.done-button {
-  display: flex;
-  justify-content: space-evenly;
-  font-family: inherit;
-  text-align: center;
-  text-decoration: none !important;
-  color: white;
-  background: #29a5dc;
-  padding: 12px 20px;
-  border-radius: 2px;
-  width: 35%;
-  font-size: 22px;
-  border-style: none;
-  margin: 20px;
-  position: relative;
-  left: 20%;
-}
-
-
-.done {
-  margin-left: 3px;
+  padding-left: 80px;
+  font-size: 50px;
+  padding-top: 30px;
 }
 
 .mastery-container {

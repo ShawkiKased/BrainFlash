@@ -13,23 +13,13 @@ class AnswerButtons extends React.Component{
     //     }
     // }
 
-    componentDidMount() {
-        const index = this.props.deck ?
-        ((this.props.index + 1) % this.props.length) : 0;
-
-        const nextCardId = this.props.deck ?
-        (this.props.deck.cardIds[index]) : 0;
-    }
-
-    
-
     render() {
         debugger
-        const index = this.props.deck ?
-        ((this.props.index + 1) %  this.props.length) : 0;
+        // const index = this.props.deck ?
+        // ((this.props.index + 1) %  this.props.length) : 0;
 
-        const nextCardId = this.props.deck ?
-        (this.props.deck.cardIds[index]) : 0;
+        // const nextCardId = this.props.deck ?
+        // (this.props.deck.cardIds[index]) : 0;
 
         return(
             <>
@@ -41,7 +31,7 @@ class AnswerButtons extends React.Component{
                     onClick={() => {this.props.flipAnswer();}}
                     to={
                         {
-                        pathname: `/cards/${nextCardId}`,
+                        pathname: `/decks`,
                         state: {
                             deck: this.props.deck,
                             currentCard: this.props.currentCard,
