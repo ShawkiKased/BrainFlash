@@ -13,7 +13,6 @@ import { withRouter } from 'react-router';
 //     };
 // }
 // const mStP = (state, ownProps) => {
-//     debugger
 //     return {
 //         cards: state.entities.cards,
 //         decks: state.entities.decks,
