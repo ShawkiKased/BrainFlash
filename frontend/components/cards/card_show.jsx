@@ -47,7 +47,7 @@ class CardShow extends React.Component {
                             </div>
                         </div>
                     </section>
-                    <Link to={`/decks/${this.props.deck.id}`}>
+                    <Link to={`/decks/${this.props.deck}`}>
                         <button className="done-button">
                             <div className="done">
                                 Done

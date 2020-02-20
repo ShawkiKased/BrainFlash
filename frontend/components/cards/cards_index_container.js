@@ -12,6 +12,15 @@ import { withRouter } from 'react-router';
 //         hideDelete: ownProps.hideDelete
 //     };
 // }
+// const mStP = (state, ownProps) => {
+//     debugger
+//     return {
+//         cards: state.entities.cards,
+//         decks: state.entities.decks,
+//         hideDelete: state.hideDelete,
+//         deckId: ownProps.match.params.id
+//     };
+// }
 
 const mStP = state => {
     return {
@@ -25,7 +34,8 @@ const mDtP = dispatch => {
     return{
         createCard: card => dispatch(createCard(card)),
         deleteCard: cardId => dispatch(deleteCard(cardId)),
-        fetchDeck: deckId => dispatch(fetchDeck(deckId))
+        fetchDeck: deckId => dispatch(fetchDeck(deckId)),
+        // fetchCards: deckId => dispatch(fetchCards(deckId))
     };
 }
 
