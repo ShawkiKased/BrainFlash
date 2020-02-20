@@ -164,12 +164,12 @@ span.toggle-card {
 
 .how-well {
   position: absolute;
-  top: -55%;
-  left: 41%;
+  top: 10%;
+  left: 59%;
   text-align: center;
   color: #333333;
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .answer-button-container {
@@ -178,7 +178,7 @@ span.toggle-card {
   height: 100%;
 }
 
-.rank-1 {
+.pass {
   color: white;
   font-size: 24px;
   box-shadow: 0 3px 4px rgba(0,0,0,0.25);
@@ -191,7 +191,7 @@ span.toggle-card {
   padding: 25px 25px;
 }
 
-.rank-2 {
+.fail {
   color: white;
   font-size: 24px;
   box-shadow: 0 3px 4px rgba(0,0,0,0.25);
@@ -203,46 +203,6 @@ span.toggle-card {
   align-items: center;
   padding: 25px 25px;
 }
-
-.rank-3 {
-  color: white;
-  font-size: 24px;
-  box-shadow: 0 3px 4px rgba(0,0,0,0.25);
-  grid-column-start: 3;
-  grid-column-end: 4;
-  background-color: #ffdd00;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 25px;
-}
-
-.rank-4 {
-  color: white;
-  font-size: 24px;
-  box-shadow: 0 3px 4px rgba(0,0,0,0.25);
-  grid-column-start: 4;
-  grid-column-end: 5;
-  background-color: #7fae2e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 25px;
-}
-
-.rank-5 {
-  color: white;
-  font-size: 24px;
-  box-shadow: 0 3px 4px rgba(0,0,0,0.25);
-  grid-column-start: 5;
-  grid-column-end: 6;
-  background-color: #00a8d7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 25px;
-}
-
 
 .delete-card-button {
   color: black;
@@ -278,11 +238,13 @@ span.toggle-card {
 
 .study-title {
   color: #b0b0b0;
+  font-size: 20px;
 }
 
 .current-deck-title {
   color: white;
   padding-left: 10px;
+  font-size: 20px;
 }
 
 .done-button {
@@ -349,9 +311,7 @@ span.toggle-card {
 
 .bottom-buttons {
   position: relative;
-  top: -9%;
-  height: 17%;
-  margin: 49px;
+  top: -180px;
 }
 
 .cards-container {
@@ -376,4 +336,9 @@ span.toggle-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.study-test {
+  display:block;
+  font-size:20px;
 }

@@ -8,6 +8,7 @@ class AnswerButtons extends React.Component{
     }
 
     render() {
+        debugger
         const index = this.props.deck ?
         ((this.props.index + 1) %  this.props.length) : 0;
 
@@ -32,11 +33,8 @@ class AnswerButtons extends React.Component{
                         }
                        }
                     }>
-                    <div onClick={() => this.props.rankScore(1)} className="rank-1">1</div>
-                    <div onClick={() => this.props.rankScore(2)} className="rank-2">2</div>
-                    <div onClick={() => this.props.rankScore(3)} className="rank-3">3</div>
-                    <div onClick={() => this.props.rankScore(4)} className="rank-4">4</div>
-                    <div onClick={() => this.props.rankScore(5)} className="rank-5">5</div>
+                    <div className="pass">Correct!</div>
+                    <div className="fail">Incorrect!</div>
                 </Link> : ""}
             </>
         );
