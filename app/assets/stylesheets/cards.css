@@ -232,15 +232,13 @@ span.toggle-card {
 
 .card-show-container {
   margin-top: 150px;
-  display: grid;
-  grid-template-columns: 4% 21% 74.8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .progress {
-  grid-column-start: 2;
-  grid-column-end: 3;
   background-color: #333333;
-  flex-grow: 1;
 }
 
 .section-title {
@@ -291,7 +289,12 @@ span.toggle-card {
 .flashcard-container {
   grid-column-start: 3;
   grid-column-end: 4;
+  height: 180px;
   /* background-color: #f6f6f6; */
+}
+
+.flip-page {
+  height: 160px;
 }
 
 .card-list-array {
@@ -304,7 +307,7 @@ span.toggle-card {
 
 .bottom-buttons {
   position: relative;
-  top: -140px;
+  top: -195px;
 }
 
 .cards-container {
