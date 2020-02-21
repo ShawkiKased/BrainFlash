@@ -16,8 +16,14 @@ class CardsIndex extends React.Component {
     }
 
     componentDidMount() {
-        this.props.fetchDeck(this.props.deckId);
+        this.props.fetchDeck(this.props.match.params.deckId);
         // this.props.fetchCards(this.props.deckId);
+    }
+
+    componentDidUpdate(nextProps) {
+        if (this.props.match.params.deckId !== nextProps.match.params.deckId) {
+            this.props.fetchDeck(nextProps.match.params.deckId);
+        }
     }
 
     toggleCard() {
@@ -28,7 +34,6 @@ class CardsIndex extends React.Component {
 
 
     render() {
-
         const addCard = (this.state.showCard ? <AddCardContainer 
             showModal={this.state.showCard}
             closeCardForm={() => this.setState({showCard: false})}/> 
@@ -41,7 +46,7 @@ class CardsIndex extends React.Component {
             const card = this.props.cards[cardId];
 
             return (
-                <div className="card-list-inner">
+                <div className="card-list-inner" key={cardId}>
                     <ul className="list-container">
                         <li className="card-preview-text">
                             {card ? card.question : ""}

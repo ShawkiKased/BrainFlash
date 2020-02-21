@@ -25,6 +25,8 @@ const mStP = state => {
     return {
         cards: state.entities.cards,
         decks: state.entities.decks,
+        // cards: Object.values(state.entities.cards),
+        // decks: Object.values(state.entities.decks),
         hideDelete: state.hideDelete
     };
 }

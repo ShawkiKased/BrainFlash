@@ -30,7 +30,6 @@ class AddCardForm extends React.Component {
 
 
     render() {
-        
         return (
             <>
                 <div onClick={() => this.props.closeCardForm()} className="modal-overlay" />

@@ -1,4 +1,5 @@
 import { RECEIVE_ALL_DECKS, RECEIVE_DECK, REMOVE_DECK } from '../actions/deck_actions';
+import { RECEIVE_CARD} from '../actions/card_actions';
 
 const decksReducer = (oldState = {}, action ) => {
     Object.freeze(oldState);
@@ -15,6 +16,9 @@ const decksReducer = (oldState = {}, action ) => {
             // return Object.assign({}, oldState, {[action.deck.id]: action.deck});
         case REMOVE_DECK:
             delete nextState[action.deckId];
+            return nextState;
+        case RECEIVE_CARD:
+            nextState[action.deck.id].cardIds.push(action.card.id);
             return nextState;
         default:
             return oldState;
