@@ -3,11 +3,10 @@ import { createCard } from '../../actions/card_actions';
 import AddCardForm from './add_card_form';
 import { withRouter } from 'react-router-dom';
 
-const mStP = (state, ownProps) => {
+const mStP = state => {
    
     return {
-        cards: state.entities.cards,
-
+        cards: state.entities.cards
         // deckId: ownProps.match.params.deckId
     };
 }

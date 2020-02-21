@@ -20,7 +20,7 @@
 
 
 .deck-title-container {
-  margin-top: 0px;
+  margin-top: 40px;
   margin-bottom: 1px;
   padding-right: 10px;
   height: 56px;
@@ -90,7 +90,7 @@
   font-weight: bolder;
   margin-bottom: 4px;
   margin-right: 28%;
-  color: white;
+  color: black;
 }
 
 .form-input {
