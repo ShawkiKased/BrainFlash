@@ -14,7 +14,6 @@ class AnswerButtons extends React.Component{
     // }
 
     render() {
-        debugger
         // const index = this.props.deck ?
         // ((this.props.index + 1) %  this.props.length) : 0;
 

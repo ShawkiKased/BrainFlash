@@ -143,8 +143,13 @@ span.toggle-card {
 
 
 .flashcard {
-  padding: 14% 16%;
-  height: 25%;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .question-button-container {
@@ -169,6 +174,7 @@ span.toggle-card {
   padding: 7px;
   color: #bfbfbf;
   font-size: 20px;
+  margin-top: 14px;
 }
 
 .how-well {
@@ -233,10 +239,8 @@ span.toggle-card {
 .progress {
   grid-column-start: 2;
   grid-column-end: 3;
-  height: 100%;
   background-color: #333333;
   flex-grow: 1;
-  height: 100%;
 }
 
 .section-title {
@@ -287,7 +291,7 @@ span.toggle-card {
 .flashcard-container {
   grid-column-start: 3;
   grid-column-end: 4;
-  background-color: #f6f6f6;
+  /* background-color: #f6f6f6; */
 }
 
 .card-list-array {
@@ -300,7 +304,7 @@ span.toggle-card {
 
 .bottom-buttons {
   position: relative;
-  top: -180px;
+  top: -140px;
 }
 
 .cards-container {

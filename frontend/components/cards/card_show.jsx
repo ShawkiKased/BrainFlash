@@ -31,7 +31,6 @@ class CardShow extends React.Component {
     //     }
     // }
     render() {
-        debugger
         return(
             <div  className="card-show-container">
                 <div className="progress">
