@@ -32,12 +32,21 @@ const Greeting = ({ currentUser, logout, openModal }) => {
                         <span className="flash">FLASH</span>
                     </a>
                 </div>
-                <a className="deck-link" href="#/decks">
+                {/* <a className="deck-link" href="#/decks">
                     <button className="make">Make Flashcards</button>
+                    <h2 className="header-name">Welcome Back!</h2>
                     <a className="educators" href="#/educator">Educators</a>
                     <a className="companies" href="#/companies">Companies</a>
                     <a className="about" href="#/about">About</a>
+                </a>
+                <a className="logout" href="#/"><button className="header-button" onClick={logout}>Log Out</button>
+                </a> */}
+                <a className="deck-link" href="#/decks">
+                    <button className="make">Make Flashcards</button>
                     <h2 className="header-name">Welcome Back!</h2>
+                    <button className="educators" href="#/educator">Educators</button>
+                    <button className="companies" href="#/companies">Companies</button>
+                    <button className="about" href="#/about">About</button>
                 </a>
                 <a className="logout" href="#/"><button className="header-button" onClick={logout}>Log Out</button>
                 </a>

@@ -22,14 +22,15 @@ class AddCardForm extends React.Component {
         this.props.closeCardForm();
     }
 
-    update(field) {
+    update(card) {
         return e => this.setState({
-            [field]: e.currentTarget.value
+            [card]: e.currentTarget.value
         });
     }
 
 
     render() {
+        
         return (
             <>
                 <div onClick={() => this.props.closeCardForm()} className="modal-overlay" />
@@ -50,7 +51,15 @@ class AddCardForm extends React.Component {
                         className="add-card-input"
                     ></textarea>
 
-                    <input className="save-button" type="submit" value="Add Card!" />
+                    {/* <input className="save-button" type="submit" value="Add Card!" /> */}
+                    <div className="form-buttons">
+                        <button onClick={this.props.closeDeckModal} className="cancel-button">
+                            Cancel
+                          </button>
+                        <button className="save-button">
+                            Save
+                          </button>
+                    </div>
 
                 </form>
             </>

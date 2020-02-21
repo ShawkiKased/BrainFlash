@@ -278,7 +278,14 @@ margin-bottom: 20px;
   outline: none;
   border: none;
   background: transparent;
-  margin-top: 24px;
+  padding-top: 24px;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: Proxima Nova, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 25px;
 }
 
 .educators:hover {
@@ -323,7 +330,14 @@ margin-bottom: 20px;
   outline: none;
   border: none;
   background: transparent;
-  margin-top: 24px;
+  padding-top: 24px;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: Proxima Nova, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 25px;
 }
 
 .educators {
@@ -331,7 +345,14 @@ margin-bottom: 20px;
   outline: none;
   border: none;
   background: transparent;
-  margin-top: 24px;
+  padding-top: 24px;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: Proxima Nova, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 25px;
 }
 
 .make {
