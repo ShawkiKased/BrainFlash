@@ -250,15 +250,15 @@ span.toggle-card {
 .study-title {
   color: #b0b0b0;
   font-size: 50px;
-  padding-left: 40px;
   padding-top: 10px;
 }
 
 .current-deck-title {
   color: white;
-  padding-left: 80px;
   font-size: 50px;
   padding-top: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .mastery-container {
