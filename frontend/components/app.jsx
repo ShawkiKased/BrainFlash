@@ -7,6 +7,9 @@ import SplashForm from './splash_form/splash_container';
 import DecksIndexContainer from './decks/decks_index_container';
 import DeckShowContainer from './decks/deck_show_container';
 import CardShowContainer from './cards/card_show_container';
+import About from './extra/about';
+import Educator from './extra/educators';
+import Companies from './extra/companies';
 
 
 const App = () => (
@@ -19,7 +22,10 @@ const App = () => (
       <Route path="/decks" component={DecksIndexContainer} />
       <Route path="/decks/:deckId" component={DeckShowContainer} />
       <Route path="/cards/:cardId" component={CardShowContainer} />
-      <Route path="/about" component={AboutContainer} />
+      <Route path="/about" component={About} />
+      <Route path="/educator" component={Educator} />
+      <Route path="/companies" component={Companies} />
+
     </>
 );
 

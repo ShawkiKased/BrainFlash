@@ -141,6 +141,10 @@ a {
  margin-top: 20px;
 }
 
+.login-form > .session-submit:hover {
+  background-color: #28a5dc;
+}
+
 .main-form {
   font-size: 33px;
   padding: 0;
@@ -274,13 +278,52 @@ margin-bottom: 20px;
   outline: none;
   border: none;
   background: transparent;
+  margin-top: 24px;
 }
 
+.educators:hover {
+  color: #28a5dc;
+}
+
+.companies:hover {
+  color: #28a5dc;
+}
+
+.about:hover {
+  color: #28a5dc;
+}
+
+.about-main {
+  font-size: 50px;
+  color: #fff;
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 400;
+  width: 45%;
+  line-height: 120%;
+  text-shadow: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-left: 500px;
+  margin-top: 100px;
+}
+
+.about-mini1 {
+  font-size: 24px;
+  line-height: 135%;
+  font-family: Proxima Nova, sans-serif;
+  color: #fff;
+  font-weight: 100;
+  text-align: left;
+  box-sizing: border-box;
+  margin-left: 500px;
+  width: 350px;
+}
 .companies {
   color: white;
   outline: none;
   border: none;
   background: transparent;
+  margin-top: 24px;
 }
 
 .educators {
@@ -288,6 +331,7 @@ margin-bottom: 20px;
   outline: none;
   border: none;
   background: transparent;
+  margin-top: 24px;
 }
 
 .make {
@@ -296,6 +340,11 @@ margin-bottom: 20px;
   border: none;
   background: transparent;
 }
+
+.make:hover {
+  color: #28a5dc;
+}
+
 
 .find {
   color: white;
@@ -395,6 +444,58 @@ p {
   background-repeat: no-repeat;
   font-family: sans-serif;
   width: auto;
+}
+
+.educator-main {
+  font-size: 50px;
+  color: #fff;
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 400;
+  width: 45%;
+  line-height: 120%;
+  text-shadow: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-left: 500px;
+  margin-top: 100px;
+}
+
+.educator-mini1 {
+  font-size: 24px;
+  line-height: 135%;
+  font-family: Proxima Nova, sans-serif;
+  color: #fff;
+  font-weight: 100;
+  text-align: left;
+  box-sizing: border-box;
+  margin-left: 500px;
+  width: 350px;
+}
+
+.companies-main {
+  font-size: 50px;
+  color: #fff;
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 400;
+  width: 45%;
+  line-height: 120%;
+  text-shadow: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-left: 500px;
+  margin-top: 100px;
+}
+
+.companies-mini1 {
+  font-size: 24px;
+  line-height: 135%;
+  font-family: Proxima Nova, sans-serif;
+  color: #fff;
+  font-weight: 100;
+  text-align: left;
+  box-sizing: border-box;
+  margin-left: 500px;
+  width: 350px;
 }
 
 /* .search {
