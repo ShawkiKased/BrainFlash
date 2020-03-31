@@ -1,5 +1,6 @@
 html {
     background-image: url(https://www.brainscape.com/assets/home/main.jpg);
+    background-size: cover;
 }
 
 h1 {
