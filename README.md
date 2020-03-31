@@ -17,6 +17,9 @@ Users can create their own decks in an easy to access bar, and each deck can mak
 
 You can create your own decks with a simple click of a button, give it a name you want the subject to cover and BAM, it appears right there!
 But that's not all, you can add a card also with a simple click of a button. All you have to do is give it the question and answer!
+
+![CardExample](https://i.imgur.com/GuwdBk0.png)
+
 I did this by simply creating a Modal that opens and closes when you click on the add button so you can do it on the same page, this was acheived by setting the State of the modal to false by default and then switched to true when the buttons are clicked!
 I originally had an issue when the Modal wasn't being called despite the code being correct, figuring it out is what got me to set the State's to true and false since it makes it a lot easier to access without entirely getting rid of it.
 
@@ -31,7 +34,8 @@ This was also done similarly where answer's state is hidden until the User activ
  ``<button onClick={() => this.setState({ answer: !this.state.answer })}>
  <CardQuestion question={this.props.currentCard ? this.props.currentCard.question : ""} />
  </button>``
- 
+
+ ![TestExample](https://i.imgur.com/AhQY2xX.png)
  
  ## Future Plans for BrainFlash
  
