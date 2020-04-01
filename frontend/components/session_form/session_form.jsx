@@ -11,6 +11,15 @@ class SessionForm extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    demoSubmit() {
+        return (
+            <input type="submit"
+                id="demo-user"
+                onClick={() => this.setState({email: "demoUser@aol.com", password: "demoguy"})}
+                value="DEMO" />
+        );
+    }
+
     update(field) {
         return e => this.setState({
             [field]: e.currentTarget.value
@@ -43,6 +52,7 @@ class SessionForm extends React.Component {
                     <h2 className="main-form" >{this.props.formType}</h2>
                     <div onClick={this.props.closeModal} className="close-x">X</div>
                     
+
                     {this.renderErrors()}
                     <div className="login-form">
                         <br/>
@@ -64,6 +74,10 @@ class SessionForm extends React.Component {
                             />
                         </label>
                         <br/>
+                        <button onClick={() => (this.setState({
+                            email: "demoUser@aol.com",
+                            password: "demoguy"
+                        }))} className="modal-login-button">Demo</button>
                         <input className="session-submit" type="submit" value={this.props.formType} />
                     </div>
                     <h3 className="other-form">{this.props.otherForm}</h3>
