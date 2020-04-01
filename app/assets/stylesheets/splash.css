@@ -4,6 +4,7 @@ html {
   background-size:cover;
   min-height: 100vh;
   min-width: 100vh;
+  overflow: hidden;
 }
 
 h1 {
