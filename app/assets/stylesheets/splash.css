@@ -124,10 +124,9 @@ a {
   box-sizing: border-box;
 }
 
-.login-form > .session-submit {
+.session-submit {
  margin: 0 180px;
  background-color: #cecece;
- cursor: not-allowed;
  font-size: 14px;
  font-weight: 700;
  height: 48px;
@@ -142,12 +141,45 @@ a {
  padding: 0 28.8px;
  position: relative;
  transition: all .3s;
- margin-left: 350px;
+ margin-left: 0px;
+ margin-right: 0px;
  margin-top: 20px;
 }
 
-.login-form > .session-submit:hover {
+.session-submit:hover {
   background-color: #28a5dc;
+}
+
+.modal-login-button{
+  margin: 0 180px;
+ background-color: #cecece;
+ font-size: 14px;
+ font-weight: 700;
+ height: 48px;
+ color: #fff;
+ align-items: center;
+ border: none;
+ border-radius: 36px;
+ box-sizing: border-box;
+ display:flex;
+ justify-content: center;
+ outline-style: none;
+ padding: 0 28.8px;
+ position: relative;
+ transition: all .3s;
+ margin-left: 0px;
+ margin-right: 10px;
+ margin-top: 20px;
+}
+
+.modal-login-button:hover {
+  background-color: #28a5dc;
+}
+
+.buttons{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
 }
 
 .main-form {

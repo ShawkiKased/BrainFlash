@@ -74,11 +74,13 @@ class SessionForm extends React.Component {
                             />
                         </label>
                         <br/>
-                        <button onClick={() => (this.setState({
-                            email: "demoUser@aol.com",
-                            password: "demoguy"
-                        }))} className="modal-login-button">Demo</button>
-                        <input className="session-submit" type="submit" value={this.props.formType} />
+                        <div className="buttons" >
+                            <button onClick={() => (this.setState({
+                                email: "demoUser@aol.com",
+                                password: "demoguy"
+                            }))} className="modal-login-button">Demo</button>
+                            <input className="session-submit" type="submit" value={this.props.formType} />
+                        </div>
                     </div>
                     <h3 className="other-form">{this.props.otherForm}</h3>
                 </form>
