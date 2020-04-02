@@ -43,4 +43,71 @@ class SignupForm extends React.Component {
         e.preventDefault();
         this.props.otherForm();
     }
+
+    render() {
+        return (
+            <div className="signup-outer-container">
+                <div className="signup-form-container-1">
+                    <form onSubmit={this.handleSubmit} className="login-form">
+                        {this.props.errors.map((err, idx) => (
+                            <div key={idx} className="errors">
+                                {err}
+                            </div>
+                        ))}
+                        <div className="login-message">
+                            <h2 className="title">Welcome to BrainFlash!</h2>
+                        </div>
+                        <div>
+                            <div className="login-email">
+                                <h5>EMAIL:</h5>
+                                <input 
+                                  type="text"
+                                  value={this.state.email}
+                                  onChange={this.update("email")}
+                                  placeholder="Email*"
+                                  className="login-emailpw-input"
+                                />
+                            </div>
+                            <br />
+                            <div className="login-password">
+                                <h5>PASSWORD:</h5>
+                                <input 
+                                  type="password"
+                                  value={this.state.password}
+                                  onChange={this.update("password")}
+                                  placeholder="Password*"
+                                  className="login-emailpw-input"
+                                />
+                                <br />
+                                <div className="signup-button">
+                                    <button
+                                      className="session-submit"
+                                      type="submit"
+                                      value="Submit"
+                                    >
+                                        <div className="content-text-signup">Get Started</div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="signup-nav-content">
+                                <p className="signup-login-link">
+                                    <button onClick={this.handleOtherForm} className="other-form">
+                                        Already have an account?
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                    <div
+                      onClick={() => this.props.closeModal()}
+                      className="modal-overlay"
+                    >
+                        X
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
+
+export default withRouter(SignupForm);
