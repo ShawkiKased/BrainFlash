@@ -65,6 +65,7 @@ class LoginForm extends React.Component {
                                 {error}
                             </li>
                         ))}
+                        <h2 className="main-form" >{this.props.formType}</h2>
                         {/* {this.props.errors.map((err, idx) => (
                             <div key={idx} className="errors">
                                 {err}
