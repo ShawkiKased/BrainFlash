@@ -11,7 +11,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
                   <span className="flash">FLASH</span>
               </a> 
             </div>
-            <button className="make">Make Flashcards</button>
+            <button className="make" onClick={() => openModal('Login')}>Make Flashcards</button>
             <a className="educators" href="#/educator">Educators</a>
             <a className="companies" href="#/companies">Companies</a>
             <a className="about" href="#/about">About</a>
