@@ -51,8 +51,8 @@ class LoginForm extends React.Component {
     render() {
         return (
             <div className="login-outer-container">
-                <div className="login-form-container-1">
-                    <form onSubmit={this.handleSubmit} className="login-form">
+                <div className="login-form-container">
+                    <form onSubmit={this.handleSubmit} className="login-form-box">
                         {this.props.errors.map((err,idx) => (
                             <div key={idx} className="errors">
                                 {err}
@@ -98,7 +98,7 @@ class LoginForm extends React.Component {
                                         email: "demoUser@aol.com",
                                         password: "demoguy"
                                     }))} className="modal-login-button">Demo</button>
-                                    <input className="session-submit" type="submit" value={this.props.formType} />
+                                    {/* <input className="session-submit" type="submit" value={this.props.formType} /> */}
                                 </div>
                                 <div className="loginNavContent">
                                     <button onClick={this.handleOtherForm} className="other-form">
@@ -111,7 +111,7 @@ class LoginForm extends React.Component {
                     <br />
                     <div
                       onClick={() => this.props.closeModal()}
-                      className="modal-overlay"
+                        className="close-x"
                     >
                         X
                     </div>

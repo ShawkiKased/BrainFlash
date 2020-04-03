@@ -14,11 +14,9 @@ const mStP = ({ errors }) => {
 const mDtP = dispatch => {
     return {
         login: user => dispatch(login(user)),
-        otherForm: (
-            <button onClick={() => dispatch(openModal('Get Started'))}>
-                Create an account?
-            </button>
-        ),
+        otherForm: () => {
+            dispatch(openModal('Get Started'));
+        },
         closeModal: () => {
             dispatch(closeModal());
         }

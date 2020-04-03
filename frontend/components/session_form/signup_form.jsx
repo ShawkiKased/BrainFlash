@@ -47,8 +47,8 @@ class SignupForm extends React.Component {
     render() {
         return (
             <div className="signup-outer-container">
-                <div className="signup-form-container-1">
-                    <form onSubmit={this.handleSubmit} className="login-form">
+                <div className="signup-form-container">
+                    <form onSubmit={this.handleSubmit} className="login-form-box">
                         {this.props.errors.map((err, idx) => (
                             <div key={idx} className="errors">
                                 {err}
@@ -100,7 +100,7 @@ class SignupForm extends React.Component {
                     </form>
                     <div
                       onClick={() => this.props.closeModal()}
-                      className="modal-overlay"
+                        className="close-x"
                     >
                         X
                     </div>
