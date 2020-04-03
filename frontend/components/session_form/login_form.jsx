@@ -40,10 +40,11 @@ class LoginForm extends React.Component {
             password: this.state.password
         };
 
-        this.props.login(user).then(this.props.closeModal);
+        this.props.login(user).then(this.props.closeModal).then(this.props.clearErrors);
     }
 
     handleOtherForm(e) {
+        // debugger;
         e.preventDefault();
         this.props.otherForm();
     }

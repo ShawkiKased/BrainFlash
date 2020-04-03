@@ -17,10 +17,8 @@ const mDtP = dispatch => {
         otherForm: () => {
             dispatch(openModal('Get Started'));
         },
-        closeModal: () => {
-            dispatch(closeModal());
-            dispatch(clearErrors());
-        }
+        closeModal: () => dispatch(closeModal()),
+        clearErrors: () => dispatch(clearErrors())
     };
 }
 

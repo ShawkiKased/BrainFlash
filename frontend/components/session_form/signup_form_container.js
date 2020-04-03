@@ -18,10 +18,8 @@ const mDtP = dispatch => {
         otherForm: () => {
             dispatch(openModal('Login'))
         },
-        closeModal: () => {
-            dispatch(closeModal());
-            dispatch(clearErrors());
-        }
+        closeModal: () => dispatch(closeModal()),
+        clearErrors: () => dispatch(clearErrors())
     };
 }
 
