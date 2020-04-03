@@ -22,6 +22,15 @@ class SignupForm extends React.Component {
         this.setState({ errors: nextProps.errors });
     }
 
+    closeAndClear() {
+        this.props.clearErrors();
+        this.props.closeModals();
+    }
+
+    componentDidMount() {
+        this.props.clearErrors();
+    }
+
     update(field) {
         return e =>
           this.setState({
@@ -32,6 +41,7 @@ class SignupForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         e.stopPropagation();
+        this.props.clearErrors();
         let user = {
             email: this.state.email,
             password: this.state.password
@@ -43,6 +53,7 @@ class SignupForm extends React.Component {
         // debugger;
         e.preventDefault();
         this.props.otherForm();
+        this.props.clearErrors();
     }
 
     render() {

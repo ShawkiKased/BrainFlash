@@ -24,6 +24,15 @@ class LoginForm extends React.Component {
         );
     }
 
+    closeAndClear() {
+        this.props.clearErrors();
+        this.props.closeModal();
+    }
+
+    componentDidMount() {
+        this.props.clearErrors();
+    }
+
     update(field) {
         return e =>
           this.setState({
@@ -34,19 +43,21 @@ class LoginForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         e.stopPropagation();
+        this.props.clearErrors();
 
         let user = {
             email: this.state.email,
             password: this.state.password
         };
 
-        this.props.login(user).then(this.props.closeModal).then(this.props.clearErrors);
+        this.props.login(user).then(this.props.closeModal);
     }
 
     handleOtherForm(e) {
         // debugger;
         e.preventDefault();
         this.props.otherForm();
+        this.props.clearErrors();
     }
 
     render() {
