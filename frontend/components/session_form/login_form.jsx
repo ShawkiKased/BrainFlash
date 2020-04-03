@@ -45,7 +45,7 @@ class LoginForm extends React.Component {
 
     handleOtherForm(e) {
         e.preventDefault();
-        this.props.otherForm()
+        this.props.otherForm();
     }
 
     render() {
