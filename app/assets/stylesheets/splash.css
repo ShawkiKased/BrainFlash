@@ -112,9 +112,9 @@ a {
   background-repeat: no-repeat;
 }
 
-/* .login-form-box > ul {
+.login-form-box > li {
   color: red;
-} */
+}
 
 .login-form-box {
   width: 760px;

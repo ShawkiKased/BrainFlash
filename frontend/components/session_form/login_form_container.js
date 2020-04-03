@@ -4,9 +4,9 @@ import { login } from '../../actions/session_actions';
 import LoginForm from "./login_form";
 import { openModal, closeModal } from '../../actions/modal_actions';
 
-const mStP = ({ errors }) => {
+const mStP = state => {
     return {
-        errors: errors.session,
+        errors: state.errors.session,
         formType: 'Login'
     };
 }
