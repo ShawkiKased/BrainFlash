@@ -15,6 +15,15 @@ class LoginForm extends React.Component {
         this.handleOtherForm = this.handleOtherForm.bind(this);
     }
 
+    demoSubmit() {
+        return (
+            <input type="submit"
+                id="demo-user"
+                onClick={() => this.setState({ email: "demoUser@aol.com", password: "demoguy" })}
+                value="DEMO" />
+        );
+    }
+
     update(field) {
         return e =>
           this.setState({
@@ -83,6 +92,13 @@ class LoginForm extends React.Component {
                                     >
                                         <div className="context-text">Log In</div>
                                     </button>
+                                </div>
+                                <div className="buttons" >
+                                    <button onClick={() => (this.setState({
+                                        email: "demoUser@aol.com",
+                                        password: "demoguy"
+                                    }))} className="modal-login-button">Demo</button>
+                                    <input className="session-submit" type="submit" value={this.props.formType} />
                                 </div>
                                 <div className="loginNavContent">
                                     <button onClick={this.handleOtherForm} className="other-form">

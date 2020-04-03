@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { signup } from '../../actions/session_actions';
-import SessionForm from './session_form';
+import SignUp from './signup_form';
 import { openModal, closeModal } from '../../actions/modal_actions';
 
 const mStP = ({ errors }) => {
@@ -24,4 +24,4 @@ const mDtP = dispatch => {
     };
 }
 
-export default connect(mStP,mDtP)(SessionForm);
+export default connect(mStP,mDtP)(SignUp);
