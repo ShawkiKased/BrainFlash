@@ -22,11 +22,6 @@ class SignupForm extends React.Component {
         this.setState({ errors: nextProps.errors });
     }
 
-    closeAndClear() {
-        this.props.clearErrors();
-        this.props.closeModals();
-    }
-
     componentDidMount() {
         this.props.clearErrors();
     }

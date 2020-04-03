@@ -24,11 +24,6 @@ class LoginForm extends React.Component {
         );
     }
 
-    closeAndClear() {
-        this.props.clearErrors();
-        this.props.closeModal();
-    }
-
     componentDidMount() {
         this.props.clearErrors();
     }
