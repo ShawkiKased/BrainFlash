@@ -36,7 +36,7 @@ class SignupForm extends React.Component {
             email: this.state.email,
             password: this.state.password
         };
-        this.props.signup(user);
+        this.props.signup(user).then(this.props.closeModal);
     }
 
     handleOtherForm(e) {
