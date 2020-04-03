@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { signup } from '../../actions/session_actions';
+import { signup, clearErrors } from '../../actions/session_actions';
 import SignUp from './signup_form';
 import { openModal, closeModal } from '../../actions/modal_actions';
 
@@ -20,6 +20,7 @@ const mDtP = dispatch => {
         },
         closeModal: () => {
             dispatch(closeModal());
+            dispatch(clearErrors());
         }
     };
 }
