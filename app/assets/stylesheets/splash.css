@@ -263,21 +263,30 @@ margin-bottom: 20px;
   margin-bottom: 20px;
 }
 
-.other-form > button {
-  color: #28a5dc;
-  cursor: pointer;
-  position: relative;
-  transition: all .3s;
-  box-sizing: border-box;
-  display: block;
-  font-size: 14px;
-  border: none;
-  font-weight: 400;
-  text-align: left;
-  font-family: Proxima Nova, sans-serif;
-  background-color: white;
-  margin-left: 350px;
-  margin-top: 30px;
+.other-form {
+ margin: 0 180px;
+ background-color: #cecece;
+ font-size: 14px;
+ font-weight: 700;
+ height: 48px;
+ color: #fff;
+ align-items: center;
+ border: none;
+ border-radius: 36px;
+ box-sizing: border-box;
+ display:flex;
+ justify-content: center;
+ outline-style: none;
+ padding: 0 28.8px;
+ position: relative;
+ transition: all .3s;
+ margin-left: 0px;
+ margin-right: 0px;
+ margin-top: 20px;
+}
+
+.other-form:hover{
+  background-color: #28a5dc;
 }
 
 .login-signup {
