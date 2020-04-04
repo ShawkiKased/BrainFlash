@@ -71,11 +71,12 @@ class LoginForm extends React.Component {
                                 {err}
                             </div>
                         ))} */}
+                        <div className="branding" />
                         <div className="login-message">
                             <h2 className="title">Welcome Back!</h2>
                             <h3 className="sub-title">Let's get to Studying!</h3>
                         </div>
-                        <div className="login-wrapper">
+                        <div className="login-form">
                             <div className="login-email">
                                 <h5>Email:</h5>
                                 <input

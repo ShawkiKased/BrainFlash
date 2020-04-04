@@ -61,6 +61,7 @@ class SignupForm extends React.Component {
                                 {error}
                             </li>
                         ))}
+                        <div className="branding" />
                         <h2 className="main-form" >{this.props.formType}</h2>
                         {/* {this.props.errors.map((err, idx) => (
                             <div key={idx} className="errors">
@@ -70,7 +71,7 @@ class SignupForm extends React.Component {
                         <div className="login-message">
                             <h2 className="title">Welcome to BrainFlash!</h2>
                         </div>
-                        <div>
+                        <div className="login-form">
                             <div className="login-email">
                                 <h5>EMAIL:</h5>
                                 <input 
