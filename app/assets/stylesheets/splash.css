@@ -184,7 +184,7 @@ a {
  position: relative;
  transition: all .3s;
  margin-left: 0px;
- margin-right: 0px;
+ margin-right: 30px;
  margin-top: 20px;
 }
 
@@ -212,6 +212,7 @@ a {
  margin-left: 0px;
  margin-right: 10px;
  margin-top: 20px;
+ margin-bottom: 15px
 }
 
 .modal-login-button:hover {
@@ -355,6 +356,7 @@ margin-bottom: 20px;
   outline: none;
   border: none;
   background: transparent;
+  display: flex;
 }
 
 .login-button:hover {
