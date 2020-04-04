@@ -118,7 +118,7 @@ a {
 
 .login-form-box {
   width: 760px;
-  height: 560px;
+  height: 450px;
 }
 
 .close-x {
@@ -155,14 +155,12 @@ a {
 }
 
 .login-form {
-  padding-top: 200px;
+  padding-top: 50px;
   position: relative;
   width: 80%;
-  box-sizing: border-box;
   display: block;
-  margin-left: 240px;
-  color: #333;
-  font-size: 14px;
+  margin-left: 400px;
+  color: #197096;
   font-weight: 400;
   text-align: left;
   box-sizing: border-box;
