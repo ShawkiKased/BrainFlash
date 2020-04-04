@@ -106,14 +106,14 @@ class LoginForm extends React.Component {
                                     >
                                         <div className="context-text">Log In</div>
                                     </button>
+                                    <div className="buttons" >
+                                        <button onClick={() => (this.setState({
+                                            email: "demoUser@aol.com",
+                                            password: "demoguy"
+                                        }))} className="modal-login-button">Demo</button>
+                                        {/* <input className="session-submit" type="submit" value={this.props.formType} /> */}
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="buttons" >
-                                <button onClick={() => (this.setState({
-                                    email: "demoUser@aol.com",
-                                    password: "demoguy"
-                                }))} className="modal-login-button">Demo</button>
-                                {/* <input className="session-submit" type="submit" value={this.props.formType} /> */}
                             </div>
                             <div className="loginNavContent">
                                 <button onClick={this.handleOtherForm} className="other-form">
