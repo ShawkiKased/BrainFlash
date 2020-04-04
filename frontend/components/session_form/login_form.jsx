@@ -65,15 +65,15 @@ class LoginForm extends React.Component {
                                 {error}
                             </li>
                         ))}
+                        <div className="branding" />
                         <h2 className="main-form" >{this.props.formType}</h2>
                         {/* {this.props.errors.map((err, idx) => (
                             <div key={idx} className="errors">
                                 {err}
                             </div>
                         ))} */}
-                        <div className="branding" />
                         <div className="login-message">
-                            <h2 className="title">Welcome Back!</h2>
+                            <h2 className="title">Welcome to BrainFlash!</h2>
                             <h3 className="sub-title">Let's get to Studying!</h3>
                         </div>
                         <div className="login-form">
@@ -84,18 +84,18 @@ class LoginForm extends React.Component {
                                   value={this.state.email}
                                   onChange={this.update("email")}
                                   placeholder="Email*"
-                                  className="login-emailpw-input"
+                                  className="login-input"
                                 />
                             </div>
                             <br />
                             <div className="login-password">
-                                <h5>PASSWORD:</h5>
+                                <h5>Password:</h5>
                                 <input
                                   type="password"
                                   value={this.state.password}
                                   onChange={this.update("password")}
                                   placeholder="Password*"
-                                  className="login-emailpw-input"
+                                  className="login-input"
                                 />
                                 <br />
                                 <div className="login-button">
@@ -107,18 +107,18 @@ class LoginForm extends React.Component {
                                         <div className="context-text">Log In</div>
                                     </button>
                                 </div>
-                                <div className="buttons" >
-                                    <button onClick={() => (this.setState({
-                                        email: "demoUser@aol.com",
-                                        password: "demoguy"
-                                    }))} className="modal-login-button">Demo</button>
-                                    {/* <input className="session-submit" type="submit" value={this.props.formType} /> */}
-                                </div>
-                                <div className="loginNavContent">
-                                    <button onClick={this.handleOtherForm} className="other-form">
-                                        Need an Account?
-                                    </button>
-                                </div>
+                            </div>
+                            <div className="buttons" >
+                                <button onClick={() => (this.setState({
+                                    email: "demoUser@aol.com",
+                                    password: "demoguy"
+                                }))} className="modal-login-button">Demo</button>
+                                {/* <input className="session-submit" type="submit" value={this.props.formType} /> */}
+                            </div>
+                            <div className="loginNavContent">
+                                <button onClick={this.handleOtherForm} className="other-form">
+                                    Need an Account?
+                                </button>
                             </div>
                         </div>
                     </form>

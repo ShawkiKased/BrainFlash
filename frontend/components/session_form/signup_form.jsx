@@ -53,8 +53,8 @@ class SignupForm extends React.Component {
 
     render() {
         return (
-            <div className="signup-outer-container">
-                <div className="signup-form-container">
+            <div className="login-outer-container">
+                <div className="login-form-container">
                     <form onSubmit={this.handleSubmit} className="login-form-box">
                         {this.props.errors.map((error, i) => (
                             <li key={`error-${i}`}>
@@ -70,27 +70,28 @@ class SignupForm extends React.Component {
                         ))} */}
                         <div className="login-message">
                             <h2 className="title">Welcome to BrainFlash!</h2>
+                            <h3 className="sub-title">Let's get to Studying!</h3>
                         </div>
                         <div className="login-form">
                             <div className="login-email">
-                                <h5>EMAIL:</h5>
+                                <h5>Email:</h5>
                                 <input 
                                   type="text"
                                   value={this.state.email}
                                   onChange={this.update("email")}
                                   placeholder="Email*"
-                                  className="login-emailpw-input"
+                                  className="login-input"
                                 />
                             </div>
                             <br />
                             <div className="login-password">
-                                <h5>PASSWORD:</h5>
+                                <h5>Password:</h5>
                                 <input 
                                   type="password"
                                   value={this.state.password}
                                   onChange={this.update("password")}
                                   placeholder="Password*"
-                                  className="login-emailpw-input"
+                                  className="login-input"
                                 />
                                 <br />
                                 <div className="signup-button">
@@ -99,19 +100,19 @@ class SignupForm extends React.Component {
                                       type="submit"
                                       value="Submit"
                                     >
-                                        <div className="content-text-signup">Get Started</div>
+                                        <div className="content-text">Get Started</div>
                                     </button>
                                 </div>
                             </div>
+                            <br />
                             <div className="signup-nav-content">
-                                <p className="signup-login-link">
-                                    <button onClick={this.handleOtherForm} className="other-form">
-                                        Already have an account?
-                                    </button>
-                                </p>
+                                <button onClick={this.handleOtherForm} className="other-form">
+                                    Already have an account?
+                                </button>
                             </div>
                         </div>
                     </form>
+                    <br />
                     <div
                       onClick={() => this.props.closeModal()}
                         className="close-x"
