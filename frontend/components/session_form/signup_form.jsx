@@ -69,8 +69,9 @@ class SignupForm extends React.Component {
                             </div>
                         ))} */}
                         <div className="login-message">
-                            <h2 className="title">Welcome to BrainFlash!</h2>
-                            <h3 className="sub-title">Let's get to Studying!</h3>
+                            {/* <h3 className="title">Welcome to BrainFlash!</h3>
+                            <br />
+                            <h3 className="title">Let's get to Studying!</h3> */}
                         </div>
                         <div className="login-form">
                             <div className="login-email">

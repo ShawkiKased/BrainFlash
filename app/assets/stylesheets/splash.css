@@ -114,6 +114,8 @@ a {
 
 .login-form-box > li {
   color: red;
+  margin-left: 350px;
+  margin-top: 10px;
 }
 
 .login-form-box {
@@ -151,7 +153,7 @@ a {
   height: 36px;
   width: 36px;
   margin-left: 30px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .login-form {
@@ -607,6 +609,10 @@ p {
   box-sizing: border-box;
   margin-left: 500px;
   width: 350px;
+}
+
+.title {
+  font-size: 26px
 }
 
 /* .search {

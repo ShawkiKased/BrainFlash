@@ -60,21 +60,22 @@ class LoginForm extends React.Component {
             <div className="login-outer-container">
                 <div className="login-form-container">
                     <form onSubmit={this.handleSubmit} className="login-form-box">
+                        <div className="branding" />
+                        <h2 className="main-form" >{this.props.formType}</h2>
                         {this.props.errors.map((error, i) => (
                             <li key={`error-${i}`}>
                                 {error}
                             </li>
                         ))}
-                        <div className="branding" />
-                        <h2 className="main-form" >{this.props.formType}</h2>
                         {/* {this.props.errors.map((err, idx) => (
                             <div key={idx} className="errors">
                                 {err}
                             </div>
                         ))} */}
                         <div className="login-message">
-                            <h2 className="title">Welcome to BrainFlash!</h2>
-                            <h3 className="sub-title">Let's get to Studying!</h3>
+                            {/* <h3 className="title">Welcome to BrainFlash,</h3>
+                            <br />
+                            <h3 className="title">Let's get to Studying!</h3> */}
                         </div>
                         <div className="login-form">
                             <div className="login-email">
