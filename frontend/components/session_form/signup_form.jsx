@@ -80,7 +80,6 @@ class SignupForm extends React.Component {
                                   type="text"
                                   value={this.state.email}
                                   onChange={this.update("email")}
-                                  placeholder="Email*"
                                   className="login-input"
                                 />
                             </div>
@@ -91,7 +90,6 @@ class SignupForm extends React.Component {
                                   type="password"
                                   value={this.state.password}
                                   onChange={this.update("password")}
-                                  placeholder="Password*"
                                   className="login-input"
                                 />
                                 <br />
