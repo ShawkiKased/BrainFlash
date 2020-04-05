@@ -78,32 +78,32 @@ class SignupForm extends React.Component {
                                   className="login-input"
                                 />
                             </div>
+                        </div>
+                        <br />
+                        <div className="login-password">
+                            <h5>Password:</h5>
+                            <input 
+                                type="password"
+                                value={this.state.password}
+                                onChange={this.update("password")}
+                                className="login-input"
+                            />
                             <br />
-                            <div className="login-password">
-                                <h5>Password:</h5>
-                                <input 
-                                  type="password"
-                                  value={this.state.password}
-                                  onChange={this.update("password")}
-                                  className="login-input"
-                                />
-                                <br />
-                                <div className="signup-button">
-                                    <button
-                                      className="session-submit"
-                                      type="submit"
-                                      value="Submit"
-                                    >
-                                        <div className="content-text">Get Started</div>
-                                    </button>
-                                </div>
-                            </div>
-                            <br />
-                            <div className="signup-nav-content">
-                                <button onClick={this.handleOtherForm} className="other-form">
-                                    Already have an account?
+                            <div className="signup-button">
+                                <button
+                                    className="session-submit"
+                                    type="submit"
+                                    value="Submit"
+                                >
+                                    <div className="content-text">Get Started</div>
                                 </button>
                             </div>
+                        </div>
+                        <br />
+                        <div className="signup-nav-content">
+                            <button onClick={this.handleOtherForm} className="other-form">
+                                Already have an account?
+                            </button>
                         </div>
                     </form>
                     <br />

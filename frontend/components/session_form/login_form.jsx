@@ -91,22 +91,22 @@ class LoginForm extends React.Component {
                                   onChange={this.update("password")}
                                   className="login-input"
                                 />
-                                <br />
-                                <div className="login-button">
-                                    <button
-                                      className="session-submit"
-                                      type="submit"
-                                      value="Submit"
-                                    >
-                                        <div className="context-text">Log In</div>
-                                    </button>
-                                    <div className="buttons" >
-                                        <button onClick={() => (this.setState({
-                                            email: "demoUser@aol.com",
-                                            password: "demoguy"
-                                        }))} className="modal-login-button">Demo</button>
-                                        {/* <input className="session-submit" type="submit" value={this.props.formType} /> */}
-                                    </div>
+                            </div>
+                            <br />
+                            <div className="login-button">
+                                <button
+                                    className="session-submit"
+                                    type="submit"
+                                    value="Submit"
+                                >
+                                    <div className="context-text">Log In</div>
+                                </button>
+                                <div className="buttons" >
+                                    <button onClick={() => (this.setState({
+                                        email: "demoUser@aol.com",
+                                        password: "demoguy"
+                                    }))} className="modal-login-button">Demo</button>
+                                    {/* <input className="session-submit" type="submit" value={this.props.formType} /> */}
                                 </div>
                             </div>
                             <div className="loginNavContent">
