@@ -194,8 +194,8 @@ a {
   background-color: #28a5dc;
 }
 
-.modal-login-button{
-  margin: 0 180px;
+.demo-button{
+ margin: 0 180px;
  background-color: #cecece;
  font-size: 14px;
  font-weight: 700;
@@ -217,7 +217,7 @@ a {
  margin-bottom: 15px
 }
 
-.modal-login-button:hover {
+.demo-button:hover {
   background-color: #28a5dc;
 }
 
@@ -343,14 +343,24 @@ margin-bottom: 20px;
 }
 
 .started-button {
-  color: orange;
-  outline: none;
-  border: none;
-  background: transparent;
+    color: orange;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding-top: 24px;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: Proxima Nova, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    text-decoration: underline
 }
 
 .started-button:hover {
   color: #28a5dc;
+  cursor: pointer;
 }
 
 .login-button {
@@ -358,12 +368,41 @@ margin-bottom: 20px;
   outline: none;
   border: none;
   background: transparent;
+  padding-top: 24px;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: Proxima Nova, sans-serif;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 25px;
+  text-decoration: underline;
 }
 
 .login-button:hover {
   color: #28a5dc;
+  cursor: pointer;
 }
+
+.login-button-modal {
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding-top: 24px;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: Proxima Nova, sans-serif;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+
+.login-button-modal:hover {
+  color: #28a5dc;
+  cursor: pointer;
+}
+
 
 .about {
   color: white;
@@ -452,10 +491,20 @@ margin-bottom: 20px;
   outline: none;
   border: none;
   background: transparent;
+  padding-top: 24px;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: Proxima Nova, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 25px;
+  text-decoration: underline;
 }
 
 .make:hover {
   color: #28a5dc;
+  cursor: pointer;
 }
 
 
@@ -524,6 +573,11 @@ p {
   margin-top: 1px;
   display: block;
   font-family: sans-serif;
+  text-decoration: underline;
+}
+
+.footer-2:hover {
+  cursor: pointer;
 }
 
 .footer-2 h1 {
@@ -537,6 +591,10 @@ p {
   width: auto;
 }
 
+.footer-2 h1:hover {
+  cursor: pointer;
+}
+
 .footer-3 {
     width: 33.33333%;
     height: 133px;
@@ -546,6 +604,11 @@ p {
     margin-top: 1px;
     display: block;
     font-family: sans-serif;
+    text-decoration: underline;
+}
+
+.footer-3:hover {
+  cursor: pointer;
 }
 
 .footer-3 h1{
@@ -557,6 +620,10 @@ p {
   background-repeat: no-repeat;
   font-family: sans-serif;
   width: auto;
+}
+
+.footer-3 h1:hover{
+  cursor: pointer;
 }
 
 .educator-main {

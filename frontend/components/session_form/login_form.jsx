@@ -108,7 +108,7 @@ class LoginForm extends React.Component {
                                 />
                             </div>
                             <br />
-                            <div className="login-button">
+                            <div className="login-button-modal">
                                 <button
                                     className="session-submit"
                                     type="submit"
@@ -120,7 +120,7 @@ class LoginForm extends React.Component {
                                     <button onClick={() => (this.setState({
                                         email: "demoUser@aol.com",
                                         password: "demoguy"
-                                    }))} className="modal-login-button">Demo</button>
+                                    }))} className="demo-button">Demo</button>
                                     {/* <input className="session-submit" type="submit" value={this.props.formType} /> */}
                                 </div>
                             </div>
