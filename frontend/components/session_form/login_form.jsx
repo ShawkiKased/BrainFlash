@@ -55,6 +55,20 @@ class LoginForm extends React.Component {
         this.props.clearErrors();
     }
 
+    getErrors() {
+        if (this.errors) {
+            return (
+                <>
+                {this.props.errors.map((error,i) => (
+                    <li key={`error-${i}`}>
+                        {error}
+                    </li>
+                ))} 
+                </>
+            )
+        }
+    }
+
     render() {
         return (
             <div className="login-outer-container">
@@ -62,11 +76,12 @@ class LoginForm extends React.Component {
                     <form onSubmit={this.handleSubmit} className="login-form-box">
                         <div className="branding" />
                         <h2 className="main-form" >{this.props.formType}</h2>
-                        {this.props.errors.map((error, i) => (
+                        {this.props.errors && this.props.errors.map((error, i) => (
                             <li key={`error-${i}`}>
                                 {error}
                             </li>
                         ))}
+                        {/* {this.getErrors()} */}
                         <div className="login-message">
                             {/* <h3 className="title">Welcome to BrainFlash,</h3>
                             <br />
