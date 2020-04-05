@@ -56,13 +56,13 @@ class SignupForm extends React.Component {
             <div className="login-outer-container">
                 <div className="login-form-container">
                     <form onSubmit={this.handleSubmit} className="login-form-box">
+                        <div className="branding" />
+                        <h2 className="main-form" >{this.props.formType}</h2>
                         {this.props.errors.map((error, i) => (
                             <li key={`error-${i}`}>
                                 {error}
                             </li>
                         ))}
-                        <div className="branding" />
-                        <h2 className="main-form" >{this.props.formType}</h2>
                         {/* {this.props.errors.map((err, idx) => (
                             <div key={idx} className="errors">
                                 {err}
