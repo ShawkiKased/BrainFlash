@@ -9,13 +9,13 @@ class SplashForm extends React.Component {
             <h2 className="h1">Learn twice as fast, and remember longer!</h2>
             <h2 className="h2">Proven by decades of cognitive science</h2>
             <footer>
-                <a className="footer-2" href="#/">
+                <a className="footer-2" onClick={() => openModal('Login')}>
                     <h1>Make Flashcards</h1>
                     <h2>
                         <p>Create, share, and study on any device for free</p>
                     </h2>
                 </a>
-                <a className="footer-3" href="#/">
+                <a className="footer-3" onClick={() => openModal('Login')}>
                     <h1>Just Make Me Smarter</h1>
                     <h2>
                         <p>Study the flashcards you created!</p>
