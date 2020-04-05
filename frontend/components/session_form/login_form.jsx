@@ -67,11 +67,6 @@ class LoginForm extends React.Component {
                                 {error}
                             </li>
                         ))}
-                        {/* {this.props.errors.map((err, idx) => (
-                            <div key={idx} className="errors">
-                                {err}
-                            </div>
-                        ))} */}
                         <div className="login-message">
                             {/* <h3 className="title">Welcome to BrainFlash,</h3>
                             <br />

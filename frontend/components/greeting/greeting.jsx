@@ -18,6 +18,20 @@ const Greeting = ({ currentUser, logout, openModal }) => {
             <button className="login-button" onClick={() => openModal('Login')}>Login</button>
             <button className="started-button" onClick={() => openModal('Get Started')}>Get Started</button>
           </nav>
+          <footer>
+            <a className="footer-2" onClick={() => openModal('Login')}>
+                <h1>Make Flashcards</h1>
+                <h2>
+                    <p>Create, share, and study on any device for free</p>
+                </h2>
+            </a>
+            <a className="footer-3" onClick={() => openModal('Login')}>
+                <h1>Just Make Me Smarter</h1>
+                <h2>
+                    <p>Study the flashcards you created!</p>
+                </h2>
+            </a>
+          </footer>
          </>
         );
     };
@@ -51,6 +65,20 @@ const Greeting = ({ currentUser, logout, openModal }) => {
                 <a className="logout" href="#/"><button className="header-button" onClick={logout}>Log Out</button>
                 </a>
             </nav>
+            <footer>
+                <a className="footer-2" href="#/decks">
+                    <h1>Make Flashcards</h1>
+                    <h2>
+                        <p>Create, share, and study on any device for free</p>
+                    </h2>
+                </a>
+                <a className="footer-3" href="#/decks">
+                    <h1>Just Make Me Smarter</h1>
+                    <h2>
+                        <p>Study the flashcards you created!</p>
+                    </h2>
+                </a>
+            </footer>
             {/* <div className="header-group">
             </div> */}
             
