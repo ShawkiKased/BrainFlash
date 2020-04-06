@@ -1,5 +1,6 @@
 import React from "react";
-import GreetingContainer from './greeting/greeting_container';
+import NavBar from './greeting/greeting_container';
+import Footer from './footer/footer_container';
 import { Route } from 'react-router-dom';
 import { AuthRoute } from '../util/route_util';
 import Modal from './modal/modal';
@@ -20,7 +21,8 @@ const App = () => (
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-      <GreetingContainer className="greeting" />
+      <NavBar className="greeting" />
+      <Footer className="footer" />
       <Route exact path="/" component={SplashForm} />
       <Route path="/decks" component={DecksIndexContainer} />
       <Route path="/decks/:deckId" component={DeckShowContainer} />
