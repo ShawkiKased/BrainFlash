@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { logout } from '../../actions/session_actions';
-import Greeting from './greeting';
+import Footer from './footer';
 import { openModal } from '../../actions/modal_actions';
 import { withRouter } from 'react-router-dom';
 
@@ -17,4 +17,4 @@ const mDtP = dispatch => {
     };
 };
 
-export default connect(mStP, mDtP)(withRouter(Greeting));
+export default connect(mStP, mDtP)(withRouter(Footer));
