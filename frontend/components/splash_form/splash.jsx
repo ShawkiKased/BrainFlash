@@ -1,12 +1,12 @@
 import React from 'react';
-// import Greetings from '../greeting/greeting_container';
+import Footer from '../footer/footer_container';
 
 class SplashForm extends React.Component {
 
     render() {
         return(
             <>
-            {/* <Greetings /> */}
+            <Footer />
             <h1> Welcome to BrainFlash, an Endless World of Flash Cards!</h1>
             <h2 className="h1">Learn twice as fast, and remember longer!</h2>
             <h2 className="h2">Proven by decades of cognitive science</h2>
