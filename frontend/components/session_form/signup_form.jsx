@@ -45,7 +45,6 @@ class SignupForm extends React.Component {
     }
 
     handleOtherForm(e) {
-        // debugger;
         e.preventDefault();
         this.props.otherForm();
         this.props.clearErrors();
