@@ -28,7 +28,6 @@ const App = () => (
       <Route path="/about" component={About} />
       <Route path="/educator" component={Educator} />
       <Route path="/companies" component={Companies} />
-
     </>
 );
 

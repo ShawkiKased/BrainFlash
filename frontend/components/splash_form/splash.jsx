@@ -8,6 +8,22 @@ class SplashForm extends React.Component {
             <h1> Welcome to BrainFlash, an Endless World of Flash Cards!</h1>
             <h2 className="h1">Learn twice as fast, and remember longer!</h2>
             <h2 className="h2">Proven by decades of cognitive science</h2>
+
+            {/* <footer>
+                <a className="footer-2" href="#/decks">
+                    <h1>Make Flashcards</h1>
+                    <h2>
+                        <p>Create, share, and study on any device for free</p>
+                    </h2>
+                </a>
+                <a className="footer-3" href="#/decks">
+                    <h1>Just Make Me Smarter</h1>
+                    <h2>
+                        <p>Study the flashcards you created!</p>
+                    </h2>
+                </a>
+            </footer> */}
+
             {/* <footer>
                 <a className="footer-2" onClick={() => openModal('Login')}>
                     <h1>Make Flashcards</h1>
@@ -22,6 +38,7 @@ class SplashForm extends React.Component {
                     </h2>
                 </a>
             </footer> */}
+
             {/* <div className="search">
                 <div className="search-blurb">Search for Brainscape Flashcards on thousands of classes:</div>
                 <div className="search-bar">
