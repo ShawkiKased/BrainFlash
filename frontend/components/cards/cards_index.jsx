@@ -2,6 +2,7 @@ import React from 'react';
 import AddCardContainer from './add_card_container';
 import CardDelete from './card_delete';
 import { Link } from 'react-router-dom';
+import Onclickoutside from "react-onclickoutside";
 
 
 class CardsIndex extends React.Component {
@@ -29,6 +30,13 @@ class CardsIndex extends React.Component {
     toggleCard() {
         this.setState({
             showCard: !this.state.showCard
+        });
+    }
+
+    handleClickOutside(evt) {
+        this.setState({
+            showDeleteButton: false,
+            cardForm: false
         });
     }
 
