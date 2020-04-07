@@ -4,6 +4,7 @@ import * as APIUtil from "../util/card_api_util";
 export const RECEIVE_ALL_CARDS = "RECEIVE_ALL_CARDS";
 export const RECEIVE_CARD = "RECEIVE_CARD";
 export const REMOVE_CARD = "REMOVE_CARD";
+export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
 
 const receiveCard = ({card, deck}) => {
     return {
@@ -27,6 +28,13 @@ const removeCard = ({cardId, deck}) => {
         deck
     };
 }
+
+export const receiveErrors = (errors) => {
+  return {
+    type: RECEIVE_ERRORS,
+    errors,
+  };
+};
 
 export const fetchCards = deckId => dispatch => {
     return APIUtil.fetchCards(deckId)
