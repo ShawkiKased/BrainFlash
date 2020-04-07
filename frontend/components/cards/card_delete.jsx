@@ -1,4 +1,5 @@
 import React from 'react';
+import onClickOutside from 'react-onclickoutside';
 
 class CardDelete extends React.Component {
     constructor(props){
@@ -7,6 +8,13 @@ class CardDelete extends React.Component {
         this.state = {
             showDeleteButton: false
         };
+    }
+
+    handleClickOutside(e) {
+        this.props.hideDeleteDeck();
+        this.setState({
+            showDeleteButton: false
+        });
     }
 
     toggleDelete () {
@@ -37,4 +45,4 @@ class CardDelete extends React.Component {
     }
 }
 
-export default CardDelete;
+export default onClickOutside(CardDelete);
