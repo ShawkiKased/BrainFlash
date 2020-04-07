@@ -7,6 +7,7 @@ class AddCardForm extends React.Component {
     this.state = {
       question: "",
       answer: "",
+      errors: {}
     };
 
     this.makeNewCard = this.makeNewCard.bind(this);
@@ -41,6 +42,8 @@ class AddCardForm extends React.Component {
   }
 
   render() {
+
+    debugger
     return (
       <>
         <div
@@ -48,10 +51,6 @@ class AddCardForm extends React.Component {
           className="modal-overlay"
         />
 
-          {this.props.errors &&
-            this.props.errors.map((error, i) => (
-              <li key={`error-${i}`}>{error}</li>
-          ))}
         <form onSubmit={this.makeNewCard} className="add-card-form">
           <textarea
             rows="4"
@@ -81,6 +80,10 @@ class AddCardForm extends React.Component {
             </button>
             <button className="save-button">Save</button>
           </div>
+          {this.props.errors &&
+            this.props.errors.map((error, i) => (
+              <li key={`error-${i}`}>{error}</li>
+            ))}
         </form>
       </>
     );
