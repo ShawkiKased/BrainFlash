@@ -1,5 +1,5 @@
 import React from 'react';
-import onClickOutside from 'react-onclickoutside';
+import onClickOutside from "react-onclickoutside";
 
 class CardDelete extends React.Component {
     constructor(props){
