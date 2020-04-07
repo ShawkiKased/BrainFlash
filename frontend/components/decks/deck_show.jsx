@@ -8,7 +8,6 @@ class DeckShow extends React.Component {
     constructor(props){
         super(props);
 
-        // this.fetchDeck = props.fetchDeck.bind(this);
         this.hideDelete = this.hideDelete.bind(this);
         this.toggleDelete =  this.toggleDelete.bind(this);
 
