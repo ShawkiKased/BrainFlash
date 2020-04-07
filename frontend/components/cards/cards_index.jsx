@@ -36,7 +36,7 @@ class CardsIndex extends React.Component {
     handleClickOutside(evt) {
         this.setState({
             showDeleteButton: false,
-            cardForm: false
+            showCard: false
         });
     }
 
@@ -105,4 +105,4 @@ class CardsIndex extends React.Component {
     }
 }
 
-export default CardsIndex;
+export default onClickOutside(CardsIndex);
