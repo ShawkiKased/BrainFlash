@@ -6,6 +6,7 @@ import { withRouter } from 'react-router-dom';
 const mStP = state => {
    
     return {
+        errors: state.errors.card,
         cards: state.entities.cards
         // deckId: ownProps.match.params.deckId
     };
