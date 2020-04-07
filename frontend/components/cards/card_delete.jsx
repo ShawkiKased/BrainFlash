@@ -9,6 +9,13 @@ class CardDelete extends React.Component {
         };
     }
 
+    update(deck) {
+        return (e) =>
+        this.setState({
+            [deck]: e.currentTarget.value,
+        })
+    }
+
     toggleDelete () {
         this.setState({
             showDeleteButton: !this.state.showDeleteButton

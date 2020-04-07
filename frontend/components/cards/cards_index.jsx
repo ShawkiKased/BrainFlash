@@ -42,7 +42,6 @@ class CardsIndex extends React.Component {
 
         const currentDeckId = this.props.match.params.deckId;
         const cards = this.props.decks[currentDeckId].cardIds.map( cardId => {
-            const that = this;
             const card = this.props.cards[cardId];
 
             return (
