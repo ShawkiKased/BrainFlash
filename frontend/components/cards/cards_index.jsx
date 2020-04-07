@@ -2,7 +2,7 @@ import React from 'react';
 import AddCardContainer from './add_card_container';
 import CardDelete from './card_delete';
 import { Link } from 'react-router-dom';
-import Onclickoutside from "react-onclickoutside";
+import onClickOutside from "react-onclickoutside";
 
 
 class CardsIndex extends React.Component {
