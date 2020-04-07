@@ -1,7 +1,6 @@
 import React from 'react';
 import CardsIndexContainer from '../cards/cards_index_container';
 import { withRouter } from 'react-router-dom';
-import onClickOutside from "react-onclickoutside";
 
 class DeckShow extends React.Component {
 
@@ -15,10 +14,6 @@ class DeckShow extends React.Component {
             showDropdown: false
         };
 
-    }
-
-    handleClickOutside(e) {
-        this.setState({showDropdown: false});
     }
 
     componentDidMount() {
@@ -78,4 +73,4 @@ class DeckShow extends React.Component {
     }
 }
 
-export default withRouter(onClickOutside(DeckShow));
+export default withRouter(DeckShow);

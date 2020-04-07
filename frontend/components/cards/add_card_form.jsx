@@ -48,11 +48,11 @@ class AddCardForm extends React.Component {
           className="modal-overlay"
         />
 
-        <form onSubmit={this.makeNewCard} className="add-card-form">
           {this.props.errors &&
             this.props.errors.map((error, i) => (
               <li key={`error-${i}`}>{error}</li>
           ))}
+        <form onSubmit={this.makeNewCard} className="add-card-form">
           <textarea
             rows="4"
             cols="50"

@@ -7,7 +7,8 @@ class Api::CardsController < ApplicationController
         if @card.save
             render :show
         else
-            render json: @card.errors.full_messages, status: 400
+            # render json: @card.errors.full_messages, status: 400
+            render json: ["Please don't leave empty"], status: 400
         end
     end
 
