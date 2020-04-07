@@ -10,13 +10,6 @@ class CardDelete extends React.Component {
         };
     }
 
-    handleClickOutside(e) {
-        this.props.hideDeleteDeck();
-        this.setState({
-            showDeleteButton: false
-        });
-    }
-
     toggleDelete () {
         this.setState({
             showDeleteButton: !this.state.showDeleteButton

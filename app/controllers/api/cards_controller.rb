@@ -7,7 +7,7 @@ class Api::CardsController < ApplicationController
         if @card.save
             render :show
         else
-            render json: @card.errors.full_messages
+            render json: @card.errors.full_messages, status: 400
         end
     end
 
@@ -23,7 +23,7 @@ class Api::CardsController < ApplicationController
             @card.destroy!
             render :show
         else
-            render json: @card.errors.full_messages
+            render json: @card.errors.full_messages, status: 400
         end
     end
 
