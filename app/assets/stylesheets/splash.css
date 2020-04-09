@@ -240,7 +240,7 @@ a {
   font-size: 33px;
   padding: 0;
   color: #197096;
-  font-family: Proxima Nova,sans-serif;
+  font-family: Proxima Nova, sans-serif;
   font-weight: 600;
   text-align: center;
   text-transform: capitalize;
@@ -250,7 +250,7 @@ a {
 
 
 .text-email {
-font-family: Montserrat;
+font-family: Proxima Nova, sans-serif;
 font-size: 18px;
 padding-right: 15px;
 margin-left: 98px;
@@ -264,7 +264,7 @@ margin-bottom: 20px;
 }
 
 .text-password {
-  font-family: Montserrat;
+  font-family: Proxima Nova, sans-serif;
   display: block;
   font-size: 18px;
   padding-left: 15px;
@@ -540,7 +540,7 @@ margin-bottom: 20px;
   font-size: 17px;
   color: white;
   cursor: pointer;
-  font-family: sans-serif
+  font-family: Proxima Nova, sans-serif;
 }
 
 .flash {
@@ -548,7 +548,7 @@ margin-bottom: 20px;
   font-size: 17px;
   color: white;
   cursor: pointer;
-  font-family: sans-serif;
+  font-family: Proxima Nova, sans-serif;
 }
 
 footer {
@@ -558,7 +558,7 @@ footer {
   position: absolute;
   bottom: 5px;
   width: 150%;
-  font-family: sans-serif;
+  font-family: Proxima Nova, sans-serif;
   margin: 0;
 }
 
@@ -571,7 +571,7 @@ p {
   font-size: 14px;
   font-weight: 300;
   text-align: center;
-  font-family: sans-serif;
+  font-family: Proxima Nova, sans-serif;
 }
 
 .footer-2 {
@@ -581,7 +581,7 @@ p {
   text-align: center;
   margin-top: 1px;
   display: block;
-  font-family: sans-serif;
+  font-family: Proxima Nova, sans-serif;
   text-decoration: underline;
 }
 
@@ -596,7 +596,7 @@ p {
   background-size: 14px;
   padding-right: 75px;
   background-repeat: no-repeat;
-  font-family: sans-serif;
+  font-family: Proxima Nova, sans-serif;
   width: auto;
 }
 
@@ -612,7 +612,7 @@ p {
     margin-left: 1px;
     margin-top: 1px;
     display: block;
-    font-family: sans-serif;
+    font-family: Proxima Nova, sans-serif;
     text-decoration: underline;
 }
 
@@ -627,7 +627,7 @@ p {
   background-size: 14px;
   padding-right: 75px;
   background-repeat: no-repeat;
-  font-family: sans-serif;
+  font-family: Proxima Nova, sans-serif;
   width: auto;
 }
 
