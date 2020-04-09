@@ -9,6 +9,7 @@ import CardShowContainer from './cards/card_show_container';
 import About from './extra/about';
 import Educator from './extra/educators';
 import Companies from './extra/companies';
+// import { AuthRoute } from '../util/route_util';
 
 
 const App = () => (

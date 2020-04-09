@@ -336,6 +336,7 @@ margin-bottom: 20px;
   flex-direction: row;
   justify-content: space-around;
   width: 75px;
+  text-decoration: none;
 }
 
 
