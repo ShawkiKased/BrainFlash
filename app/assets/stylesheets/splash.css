@@ -116,11 +116,20 @@ a {
   color: red;
   margin-left: 350px;
   margin-top: 10px;
+  font-family: Proxima Nova, sans-serif;
 }
 
 .login-form-box {
   width: 760px;
   height: 450px;
+}
+
+.login-email {
+  font-family: Proxima Nova, sans-serif;
+}
+
+.login-password {
+  font-family: Proxima Nova, sans-serif;
 }
 
 .close-x {
@@ -141,7 +150,7 @@ a {
   box-sizing: border-box;
   border: 0px;
   border-radius: 2px;
-  font-family: sans-serif;
+  font-family: Proxima Nova, sans-serif;
   padding-top: 15px;
 }
 
