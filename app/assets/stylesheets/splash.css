@@ -352,19 +352,19 @@ margin-bottom: 20px;
 }
 
 .started-button {
-    color: orange;
-    outline: none;
-    border: none;
-    background: transparent;
-    padding-top: 24px;
-    font-weight: 400;
-    font-size: 13px;
-    font-family: Proxima Nova, sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 25px;
-    text-decoration: underline
+  color: orange;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding-top: 24px;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: Proxima Nova, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 25px;
+  text-decoration: none;
 }
 
 .started-button:hover {
@@ -385,7 +385,7 @@ margin-bottom: 20px;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 25px;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .login-button:hover {
@@ -426,6 +426,7 @@ margin-bottom: 20px;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 25px;
+  text-decoration: none;
 }
 
 .educators:hover {
@@ -478,6 +479,7 @@ margin-bottom: 20px;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 25px;
+  text-decoration: none;
 }
 
 .educators {
@@ -493,6 +495,7 @@ margin-bottom: 20px;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 25px;
+  text-decoration: none;
 }
 
 .make {
@@ -508,7 +511,6 @@ margin-bottom: 20px;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 25px;
-  text-decoration: underline;
 }
 
 .make:hover {
@@ -533,6 +535,10 @@ margin-bottom: 20px;
 
 .header-button:hover {
   color: orange;
+}
+
+.header-link {
+  text-decoration: none;
 }
 
 .brain {
