@@ -12,9 +12,9 @@ const Greeting = ({ currentUser, logout, openModal }) => {
               </a> 
             </div>
             <a className="make" onClick={() => openModal('Login')}>Make Flashcards</a>
-            <a className="educators" href="#/educator">Educators</a>
-            <a className="companies" href="#/companies">Companies</a>
-            <a className="about" href="#/about">About</a>
+            <a className="educators" href="https://github.com/ShawkiKased" target="_blank">Github</a>
+            <a className="companies" href="https://www.linkedin.com/in/shawki-kased-1488171a2/" target="_blank">Linkedin</a>
+            <a className="about" href="https://shawkikased.github.io/" target="_blank">My Portfolio</a>
             <a className="login-button"  onClick={() => openModal('Login')}>Login</a>
             <a className="started-button"  onClick={() => openModal('Get Started')}>Get Started</a>
           </nav>
@@ -47,9 +47,9 @@ const Greeting = ({ currentUser, logout, openModal }) => {
                         </a>
                     </div>
                     <a className="make" href="#/decks">Make Flashcards</a>
-                    <a className="educators" href="#/educator">Educators</a>
-                    <a className="companies" href="#/companies">Companies</a>
-                    <a className="about" href="#/about">About</a>
+                    <a className="educators" href="https://github.com/ShawkiKased" target="_blank">Github</a>
+                    <a className="companies" href="https://www.linkedin.com/in/shawki-kased-1488171a2/" target="_blank">Linkedin</a>
+                    <a className="about" href="https://shawkikased.github.io/" target="_blank">My Portfolio</a>
                     <a className="logout" href="#/"><button className="header-button" onClick={logout}>Log Out</button></a>
                 </nav>
                 
