@@ -511,6 +511,7 @@ margin-bottom: 20px;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 25px;
+  text-decoration: none;
 }
 
 .make:hover {
