@@ -29,18 +29,6 @@ class AddCardForm extends React.Component {
       });
   }
 
-  getErrors() {
-    if (this.errors) {
-      return (
-        <>
-          {this.props.errors.map((error, i) => (
-            <li key={`error-${i}`}>{error}</li>
-          ))}
-        </>
-      );
-    }
-  }
-
   render() {
 
     debugger
@@ -80,10 +68,6 @@ class AddCardForm extends React.Component {
             </button>
             <button className="save-button">Save</button>
           </div>
-          {this.props.errors &&
-            this.props.errors.map((error, i) => (
-              <li key={`error-${i}`}>{error}</li>
-            ))}
         </form>
       </>
     );
