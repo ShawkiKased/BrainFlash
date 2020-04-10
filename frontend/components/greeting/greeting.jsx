@@ -11,7 +11,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
                   <span className="flash">FLASH</span>
               </a> 
             </div>
-            <a className="make" onClick={() => openModal('Login')}>Make Flashcards</a>
+            {/* <a className="make" onClick={() => openModal('Login')}>Make Flashcards</a> */}
             <a className="educators" href="https://github.com/ShawkiKased" target="_blank">Github</a>
             <a className="companies" href="https://www.linkedin.com/in/shawki-kased-1488171a2/" target="_blank">Linkedin</a>
             <a className="about" href="https://shawkikased.github.io/" target="_blank">My Portfolio</a>
@@ -46,7 +46,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
                             <span className="flash">FLASH</span>
                         </a>
                     </div>
-                    <a className="make" href="#/decks">Make Flashcards</a>
+                    {/* <a className="make" href="#/decks">Make Flashcards</a> */}
                     <a className="educators" href="https://github.com/ShawkiKased" target="_blank">Github</a>
                     <a className="companies" href="https://www.linkedin.com/in/shawki-kased-1488171a2/" target="_blank">Linkedin</a>
                     <a className="about" href="https://shawkikased.github.io/" target="_blank">My Portfolio</a>
