@@ -342,3 +342,6 @@ span.toggle-card {
   display:block;
   font-size:20px;
 }
+.svg-inline--fa.fa-cog.fa-w-16{
+  margin-left: 12px;
+}
