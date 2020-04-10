@@ -326,18 +326,21 @@ margin-bottom: 20px;
 }
 
 .logout {
-  background-color: rgba(52,64,82,.5);
-  width: 100%;
-  height: 60px;
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding-top: 24px;
   font-weight: 400;
   font-size: 13px;
   font-family: Proxima Nova, sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 75px;
+  margin-bottom: 25px;
   text-decoration: none;
 }
+
 
 
 
