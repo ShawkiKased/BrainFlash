@@ -6,18 +6,18 @@ const Footer = ({currentUser, logout, openModal }) => {
         return (
             <>
             <footer>
-                <a className="footer-2" onClick={() => openModal('Login')}>
+                <a className="footer-2" onClick={() => openModal('Get Started')}>
                     <h1>Make Flashcards</h1>
                     <h2>
                         <p>Create, share, and study on any device for free</p>
                     </h2>
                 </a>
-                <a className="footer-3" onClick={() => openModal('Login')}>
+                {/* <a className="footer-3" onClick={() => openModal('Login')}>
                     <h1>Just Make Me Smarter</h1>
                     <h2>
                         <p>Study the flashcards you created!</p>
                     </h2>
-                </a>
+                </a> */}
             </footer>
             </>
         );
@@ -33,12 +33,12 @@ const Footer = ({currentUser, logout, openModal }) => {
                         <p>Create, share, and study on any device for free</p>
                     </h2>
                 </a>
-                <a className="footer-3" href="#/decks">
+                {/* <a className="footer-3" href="#/decks">
                     <h1>Just Make Me Smarter</h1>
                     <h2>
                         <p>Study the flashcards you created!</p>
                     </h2>
-                </a>
+                </a> */}
             </footer>
             </>
         );
