@@ -28,7 +28,7 @@ class CardDelete extends React.Component {
         return (
             <>
               <div className="card-settings-icon"
-                onClick={() => this.toggleDelete()}><i class="fas fa-cog"></i>
+                onClick={() => this.toggleDelete()}><i className="fas fa-cog"></i>
               </div>
               <div className="delete-container">
                   {
