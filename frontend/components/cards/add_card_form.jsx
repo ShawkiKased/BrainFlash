@@ -31,7 +31,6 @@ class AddCardForm extends React.Component {
 
   render() {
 
-    debugger
     return (
       <>
         <div
@@ -61,7 +60,7 @@ class AddCardForm extends React.Component {
           {/* <input className="save-button" type="submit" value="Add Card!" /> */}
           <div className="form-buttons">
             <button
-              onClick={this.props.closeDeckModal}
+              onClick={this.props.closeCardForm}
               className="cancel-button"
             >
               Cancel
