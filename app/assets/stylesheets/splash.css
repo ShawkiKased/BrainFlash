@@ -586,7 +586,7 @@ p {
 }
 
 .footer-2 {
-  width: 33.333333%;
+  width: 69%;
   height: 133px;
   background-color: rgba(0,170,216,0.7);
   text-align: center;
@@ -601,7 +601,7 @@ p {
 }
 
 .footer-2 h1 {
- font-size: 24px;
+  font-size: 24px;
   background-image: url(https://www.brainscape.com/assets/white-right-chevron.png);
   background-position: 75%;
   background-size: 14px;
