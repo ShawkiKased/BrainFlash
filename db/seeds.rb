@@ -53,6 +53,20 @@ science1 = Card.create!({
     'author_id'=> demo.id
 })
 
+science2 = Card.create!({
+    'question'=> 'What is H2O2?',
+    'answer'=> 'Hydrogen peroxide',
+    'deck_id'=> scienceDeck.id,
+    'author_id'=> demo.id
+})
+
+science3 = Card.create!({
+    'question'=> 'what is the quantitative measure of an earthquakes magnitude(size)',
+    'answer'=> 'Richter Scale',
+    'deck_id'=> scienceDeck.id,
+    'author_id'=> demo.id
+})
+
 historyDeck = Deck.create!({
     'title'=> 'History',
     'author_id'=> demo.id
