@@ -52,7 +52,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  padding-right: 40%;
+  /* padding-right: 40%; */
 }
 
 .study-set {
