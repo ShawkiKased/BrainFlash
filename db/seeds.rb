@@ -10,7 +10,10 @@ User.destroy_all
 Deck.destroy_all
 
 
-
+du = User.create!({
+    email: "demoUser@aol.com",
+    password: "demoguy"
+})
 
 
 
