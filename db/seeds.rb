@@ -15,6 +15,11 @@ demo = User.create!({
     password: "demoguy"
 })
 
+historyDeck = Deck.create!({
+    'title'=> 'History',
+    'author_id'=> demo.id
+})
+
 mathDeck = Deck.create!({
     'title'=> 'Math',
     'author_id'=> demo.id
@@ -25,10 +30,6 @@ scienceDeck = Deck.create!({
     'author_id'=> demo.id
 })
 
-historyDeck = Deck.create!({
-    'title'=> 'History',
-    'author_id'=> demo.id
-})
 
 
 
