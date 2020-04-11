@@ -20,13 +20,34 @@ mathDeck = Deck.create!({
     'author_id'=> demo.id
 })
 
+math1 = Card.create!({
+    'question'=> '1000 x 1000',
+    'answer'=> '1,000,000',
+    'deck_id'=> mathDeck.id,
+    'author_id'=> demo.id
+})
+
 scienceDeck = Deck.create!({
     'title'=> 'Science',
     'author_id'=> demo.id
 })
 
+science1 = Card.create!({
+    'question'=> 'Who discovered Gravity by a falling Apple?',
+    'answer'=>  'Isaac Newton',
+    'deck_id'=> scienceDeck.id,
+    'author_id'=> demo.id
+})
+
 historyDeck = Deck.create!({
     'title'=> 'History',
+    'author_id'=> demo.id
+})
+
+history1 = Card.create!({
+    'question'=> 'Who is the first president of the United States?',
+    'answer'=> 'George Washington',
+    'deck_id'=> historyDeck.id,
     'author_id'=> demo.id
 })
 
