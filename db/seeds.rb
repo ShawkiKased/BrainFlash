@@ -10,9 +10,24 @@ User.destroy_all
 Deck.destroy_all
 
 
-du = User.create!({
+demo = User.create!({
     email: "demoUser@aol.com",
     password: "demoguy"
+})
+
+mathDeck = Deck.create!({
+    'title'=> 'Math',
+    'author_id'=> demo.id
+})
+
+scienceDeck = Deck.create!({
+    'title'=> 'Science',
+    'author_id'=> demo.id
+})
+
+historyDeck = Deck.create!({
+    'title'=> 'History',
+    'author_id'=> demo.id
 })
 
 
