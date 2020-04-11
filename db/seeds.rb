@@ -27,6 +27,20 @@ math1 = Card.create!({
     'author_id'=> demo.id
 })
 
+math2 = Card.create!({
+    'question'=> 'What is the Square Root of 64?',
+    'answer'=> '8',
+    'deck_id'=> mathDeck.id,
+    'author_id'=> demo.id
+})
+
+math3 = Card.create!({
+    'question'=> 'What is the Log(2) of 512?',
+    'answer'=> '9',
+    'deck_id'=> mathDeck.id,
+    'author_id'=> demo.id
+})
+
 scienceDeck = Deck.create!({
     'title'=> 'Science',
     'author_id'=> demo.id
