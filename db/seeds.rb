@@ -21,7 +21,7 @@ mathDeck = Deck.create!({
 })
 
 math1 = Card.create!({
-    'question'=> '1000 x 1000',
+    'question'=> '1000 x 1000?',
     'answer'=> '1,000,000',
     'deck_id'=> mathDeck.id,
     'author_id'=> demo.id
@@ -61,7 +61,7 @@ science2 = Card.create!({
 })
 
 science3 = Card.create!({
-    'question'=> 'what is the quantitative measure of an earthquakes magnitude(size)',
+    'question'=> 'what is the quantitative measure of an earthquakes magnitude(size)?',
     'answer'=> 'Richter Scale',
     'deck_id'=> scienceDeck.id,
     'author_id'=> demo.id
@@ -75,6 +75,13 @@ historyDeck = Deck.create!({
 history1 = Card.create!({
     'question'=> 'Who is the first president of the United States?',
     'answer'=> 'George Washington',
+    'deck_id'=> historyDeck.id,
+    'author_id'=> demo.id
+})
+
+history2 = Card.create!({
+    'question'=> 'Which US President served the longest terms?',
+    'answer'=> 'Theodore Roosevelt',
     'deck_id'=> historyDeck.id,
     'author_id'=> demo.id
 })
