@@ -8,3 +8,11 @@
 
 User.destroy_all
 Deck.destroy_all
+
+
+
+
+
+
+
+
