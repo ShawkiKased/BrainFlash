@@ -34,13 +34,16 @@ class CardsIndex extends React.Component {
 
 
     render() {
+        const currentDeckId = this.props.match.params.deckId;
+        if (!this.props.decks[currentDeckId]) {
+            return null;
+        }
         const addCard = (this.state.showCard ? <AddCardContainer 
             showModal={this.state.showCard}
             closeCardForm={() => this.setState({showCard: false})}/> 
             : null
         );
-
-        const currentDeckId = this.props.match.params.deckId;
+        debugger
         const cards = this.props.decks[currentDeckId].cardIds.map( cardId => {
             const card = this.props.cards[cardId];
 
