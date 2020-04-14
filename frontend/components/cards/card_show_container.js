@@ -16,6 +16,7 @@ const mStP = (state, ownProps) => {
         deck: (ownProps.location.state ? state.entities.decks[ownProps.location.state.currentDeckId] : ""),
         answer: (ownProps.location.state ? state.entities.cards[ownProps.match.params.cardId].answer : "")
     };
+    
 }
 
 const mDtP = dispatch => {
