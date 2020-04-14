@@ -41,6 +41,13 @@ math3 = Card.create!({
     'author_id'=> demo.id
 })
 
+math4 = Card.create!({
+    'question'=> 'What is the proper order of operations?',
+    'answer'=> 'PEMDAS',
+    'deck_id'=> mathDeck.id,
+    'author_id'=> demo.id
+})
+
 scienceDeck = Deck.create!({
     'title'=> 'Science',
     'author_id'=> demo.id
@@ -67,6 +74,13 @@ science3 = Card.create!({
     'author_id'=> demo.id
 })
 
+science4 = Card.create!({
+    'question'=> 'Who is the German-born theoretical physicist who developed the theory of relativity?',
+    'answer'=> 'Albert Einstein',
+    'deck_id'=> scienceDeck.id,
+    'author_id'=> demo.id
+})
+
 historyDeck = Deck.create!({
     'title'=> 'History',
     'author_id'=> demo.id
@@ -82,6 +96,20 @@ history1 = Card.create!({
 history2 = Card.create!({
     'question'=> 'Which US President served the longest terms?',
     'answer'=> 'Theodore Roosevelt',
+    'deck_id'=> historyDeck.id,
+    'author_id'=> demo.id
+})
+
+history3 = Card.create!({
+    'question'=> 'Who was the german dictator that fought in World War 2?',
+    'answer'=> 'Adolf Hitler',
+    'deck_id'=> historyDeck.id,
+    'author_id'=> demo.id
+})
+
+history4 = Card.create!({
+    'question'=> 'What battle was the long-standing controversy between northern United States and southern United States?',
+    'answer'=> 'The American Civil War',
     'deck_id'=> historyDeck.id,
     'author_id'=> demo.id
 })
